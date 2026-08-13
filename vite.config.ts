@@ -13,9 +13,9 @@ const config = defineConfig({
       projects: ['./tsconfig.json'],
     }),
     tailwindcss(),
-    nitro(),
     tanstackStart(),
     viteReact(),
+    nitro(),
   ],
 })
 
