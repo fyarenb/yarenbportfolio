@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.netlify/
+.output/
+.content-collections/
+.env
+.env.*
