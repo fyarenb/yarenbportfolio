@@ -34,12 +34,6 @@ function ContactPage() {
             <ArrowUpRight />
           </a>
 
-          <a href="/assets/FYB-CV.docx" download>
-            <FileText />
-            <span><small>CV</small>View my CV</span>
-            <ArrowUpRight />
-          </a>
-
           <a href="https://wa.me/905365027574" target="_blank" rel="noreferrer">
             <CalendarDays />
             <span><small className="booking-label">BOOKING</small>Message me on WhatsApp</span>
