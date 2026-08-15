@@ -1275,3 +1275,19 @@ body {
 .case-columns > div {
   border: none !important;
 }
+\n
+/* ===== Contact typography correction ===== */
+.contact-copy,
+.contact-copy p {
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+}
+
+/* BOOKING must appear as one continuous word */
+.social-list a small {
+  display: block !important;
+  letter-spacing: 0 !important;
+  word-spacing: 0 !important;
+  white-space: nowrap !important;
+  font-kerning: normal !important;
+}
