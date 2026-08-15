@@ -12,15 +12,17 @@ function GalleryPage() {
       <section className="page-intro page-grid gallery-intro">
         <span className="eyebrow">Selected evidence</span>
         <h1>A working archive of<br /><em>ideas in motion.</em></h1>
-        <p>
-          Screens, studies, and artifacts from multilingual research, search-quality workflows,
-          and strategy projects.
-        </p>
       </section>
 
       <section className="gallery-grid page-grid">
         {galleryItems.map((item, index) => (
           <article className={`gallery-card ${item.aspect}`} key={item.src}>
+            {index === 1 && (
+              <p className="gallery-feature-note">
+                Screens, studies, and artifacts from multilingual research,<br />
+                search-quality workflows, and strategy projects.
+              </p>
+            )}
             <a href={item.src} target="_blank" rel="noreferrer" className="gallery-image-link">
               <div className="gallery-image-wrap">
                 <OptimizedImage
