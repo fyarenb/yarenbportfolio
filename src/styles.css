@@ -1310,3 +1310,24 @@ body {
   font-kerning: normal !important;
   font-variant: normal !important;
 }
+
+
+/* ===== Gallery title layout correction ===== */
+.gallery-caption {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  width: 100% !important;
+}
+
+.gallery-caption > div {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.gallery-caption h2 {
+  width: 100% !important;
+  max-width: none !important;
+  white-space: normal !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
