@@ -17,7 +17,7 @@ function HomePage() {
     <>
       <section className="hero page-grid">
         <div className="hero-copy reveal">
-          <span className="eyebrow">Welcome · Merhaba · Ciao</span>
+          <span className="eyebrow hero-welcome">Welcome · Merhaba · Ciao</span>
           <h1>
             I make AI answers
             <em>worth trusting.</em>
@@ -38,11 +38,13 @@ function HomePage() {
 
         <div className="hero-visual reveal delay-1">
           <div className="portrait-frame">
-            <img
-              src="/assets/yb-heart-logo.png"
-              alt="Fatma Yaren Birben yb heart logo"
-              className="portrait portfolio-mark"
-            />
+            <div className="portrait-inner">
+              <img
+                src="/assets/yb-heart-logo.png"
+                alt="Fatma Yaren Birben yb heart logo"
+                className="portrait portfolio-mark"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -66,7 +68,6 @@ function HomePage() {
         <div className="criteria-grid">
           {criteria.map(({ icon: Icon, label, detail }, index) => (
             <article className="criterion" key={label}>
-              <span>0{index + 1}</span>
               <Icon aria-hidden="true" />
               <h3>{label}</h3>
               <p>{detail}</p>
@@ -83,6 +84,7 @@ function HomePage() {
             <h2>Work that turns judgment into signal.</h2>
           </div>
         </div>
+
         <div className="featured-list page-grid">
           {caseStudies.slice(0, 3).map((study, index) => (
             <Link to="/projects" hash={study.slug} className="featured-row" key={study.slug}>
@@ -96,8 +98,11 @@ function HomePage() {
             </Link>
           ))}
         </div>
+
         <div className="page-grid section-end-link">
-          <Link to="/projects" className="button button-outline">View all case studies <ArrowRight size={18} /></Link>
+          <Link to="/projects" className="button button-outline">
+            View all case studies <ArrowRight size={18} />
+          </Link>
         </div>
       </section>
 

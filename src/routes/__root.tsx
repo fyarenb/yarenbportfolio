@@ -8,6 +8,7 @@ const navigation = [
   { to: '/projects', label: 'Projects' },
   { to: '/gallery', label: 'Gallery' },
   { to: '/about', label: 'About' },
+  { to: '/resume', label: 'CV' },
   { to: '/contact', label: 'Contact' },
 ] as const
 
@@ -36,6 +37,7 @@ function SiteLayout() {
         <Link to="/" className="brand" aria-label="Fatma Yaren Birben, home">
           <img src="/assets/yb-heart-logo.png" alt="yb with a heart" />
         </Link>
+
         <nav className="nav-links" aria-label="Main navigation">
           {navigation.map((item) => (
             <Link key={item.to} to={item.to} activeProps={{ className: 'active' }}>
@@ -43,6 +45,7 @@ function SiteLayout() {
             </Link>
           ))}
         </nav>
+
         <a className="header-cta" href="mailto:yarenbirben11@gmail.com">
           Say hello <ArrowUpRight size={16} />
         </a>
@@ -56,7 +59,9 @@ function SiteLayout() {
         <div>
           <span className="eyebrow">Based in Türkiye · Working globally</span>
           <p>Thoughtful human judgment for better machine intelligence.</p>
+
         </div>
+
         <div className="footer-mark">
           Made with <Heart size={15} fill="currentColor" /> by Yaren
         </div>

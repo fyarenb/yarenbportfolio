@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { ArrowRight, BookOpen, Languages, Map, Waves } from 'lucide-react'
+import { ArrowRight, BookOpen, Heart, Languages, Map, Waves } from 'lucide-react'
 
 import { OptimizedImage } from '@/components/OptimizedImage'
 
@@ -17,11 +17,16 @@ function AboutPage() {
     <div className="page-wrap">
       <section className="about-hero page-grid">
         <div>
-          <span className="eyebrow">About me</span>
+          <span className="eyebrow about-me-label">About me</span>
           <h1>Analytical by training.<br /><em>Curious by nature.</em></h1>
         </div>
         <div className="about-portrait">
-          <OptimizedImage src="/assets/profile-portrait.png" alt="Fatma Yaren Birben" widths={[320, 520]} sizes="(max-width: 760px) 75vw, 30vw" />
+          <OptimizedImage
+            src="/assets/profile-portrait.png"
+            alt="Fatma Yaren Birben"
+            widths={[320, 520]}
+            sizes="(max-width: 760px) 75vw, 30vw"
+          />
         </div>
       </section>
 
@@ -45,26 +50,38 @@ function AboutPage() {
       </section>
 
       <section className="values-band">
-        <div className="page-grid">
-          <span>Context over assumption.</span>
-          <span>Evidence over confidence.</span>
-          <span>People over metrics.</span>
+        <div className="page-grid values-row">
+          <span className="value-text">Context over assumption</span>
+          <Heart className="value-heart" aria-hidden="true" fill="currentColor" />
+          <span className="value-text">Evidence over confidence</span>
+          <Heart className="value-heart" aria-hidden="true" fill="currentColor" />
+          <span className="value-text">People over metrics</span>
         </div>
       </section>
 
       <section className="interests-section page-grid">
         <div className="section-heading compact">
           <span className="index-number">Off screen</span>
-          <div><span className="eyebrow">A little more human</span><h2>What keeps me curious</h2></div>
+          <div>
+            <span className="eyebrow">A little more human</span>
+            <h2>What keeps me curious</h2>
+          </div>
         </div>
+
         <div className="interest-grid">
           {interests.map(({ icon: Icon, title, text }) => (
-            <article key={title}><Icon /><h3>{title}</h3><p>{text}</p></article>
+            <article key={title}>
+              <Icon />
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
           ))}
         </div>
-        <Link to="/contact" className="button button-outline">Start a conversation <ArrowRight size={18} /></Link>
+
+        <Link to="/contact" className="button button-outline">
+          Start a conversation <ArrowRight size={18} />
+        </Link>
       </section>
     </div>
   )
 }
-

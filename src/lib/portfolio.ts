@@ -42,6 +42,7 @@ export const caseStudies = [
     result: 'Produced a data-led strategy connecting localized campaigns, creator partnerships, content, and targeted mobile media.',
     resultShort: 'A clearer path from traffic to trust.',
     tags: ['SEO', 'Digital marketing', 'E-commerce', 'Performance analysis'],
+    sampleUrl: 'https://docs.google.com/document/d/17kTY55HVFM4iue16VUV07veDXLh0DqJW/edit?usp=sharing&ouid=103117090966400388934&rtpof=true&sd=true',
   },
   {
     slug: 'italian-brands',
@@ -53,13 +54,27 @@ export const caseStudies = [
     result: 'Delivered a culturally grounded market study demonstrating B2 Italian, analytical writing, and international brand strategy.',
     resultShort: 'Culture decoded as competitive advantage.',
     tags: ['Italian B2', 'Brand strategy', 'Cultural analysis', 'Research'],
+    sampleUrl: 'https://drive.google.com/file/d/1brKrpLOF2HR40-K1ANIPyAFSZkg_sq8r/view?usp=sharing',
   },
 ]
 
 export const galleryItems = [
-  { src: '/assets/gallery/search-quality-profile.png', title: 'Search Quality Specialist Profile', category: 'Professional evidence', aspect: 'wide' },
-  { src: '/assets/gallery/evaluation-projects.png', title: 'Evaluation Project Portfolio', category: 'LLM & search workflows', aspect: 'wide' },
-  { src: '/assets/gallery/trendyol-strategy.png', title: 'Trendyol Digital Strategy', category: 'E-commerce case study', aspect: 'tall' },
-  { src: '/assets/gallery/italian-success-intro.png', title: 'Il Segreto del Successo Italiano', category: 'Italian-language research', aspect: 'tall' },
-  { src: '/assets/gallery/italian-success-analysis.png', title: 'Italian Brand Heritage Analysis', category: 'International market research', aspect: 'tall' },
+  {
+    src: '/assets/gallery/search-quality-profile.png',
+    title: 'Search Engine Quality Specialist Profile & Projects',
+    category: 'Professional evidence',
+    aspect: 'wide',
+  },
+  {
+    src: '/assets/gallery/trendyol-marketing-analysis.png',
+    title: 'Trendyol Marketing Analysis',
+    category: 'E-commerce case study',
+    aspect: 'wide',
+  },
+  {
+    src: '/assets/gallery/italian-success-intro.png',
+    title: 'Il Segreto del Successo Italiano',
+    category: 'Italian-language research',
+    aspect: 'wide',
+  },
 ]

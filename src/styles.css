@@ -345,3 +345,933 @@ h2 { color: var(--orange-dark); font-size: clamp(2.75rem, 5.5vw, 5.3rem); }
 
 /* Footer "Made with (heart) by Yaren" -> bigger */
 .footer-mark { font-size: 1.05rem; }
+
+
+/* ===== Final requested visual polish ===== */
+
+:root {
+  --page-bg-deeper: #e4d7c4;
+}
+
+body {
+  background-color: var(--page-bg-deeper);
+}
+
+.hero-welcome,
+.hero-copy .eyebrow {
+  font-weight: 950;
+}
+
+.about-me-label,
+.gallery-intro .eyebrow,
+.projects-intro .eyebrow {
+  font-weight: 950;
+}
+
+.gallery-card {
+  background: rgba(255, 253, 245, 0.72);
+}
+
+.gallery-caption h2,
+.case-study .case-body h2,
+.projects-intro + .case-study-list h2 {
+  color: var(--green-dark);
+  font-weight: 950;
+}
+
+.gallery-caption p {
+  color: var(--orange);
+  font-weight: 800;
+}
+
+.gallery-image-link {
+  display: block;
+}
+
+.sample-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 22px;
+  padding: 9px 13px;
+  border: 2px solid var(--orange);
+  background: var(--orange);
+  color: #fff;
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.sample-button:hover {
+  filter: brightness(0.92);
+}
+
+.case-columns .case-result h3 {
+  color: var(--yellow);
+  font-weight: 950;
+}
+
+.tag-row span {
+  border: 2px solid var(--green);
+}
+
+.project-cta .cta-yellow {
+  color: #fff;
+}
+
+.featured-result {
+  color: var(--orange);
+  font-weight: 900;
+}
+
+.values-band .page-grid {
+  align-items: center;
+}
+
+.value-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 900;
+}
+
+.value-line svg {
+  color: var(--orange);
+}
+
+.interest-grid p {
+  color: var(--orange);
+  font-weight: 800;
+}
+
+.contact-intro {
+  color: #171717;
+  font-weight: 800;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.footer-links a {
+  color: var(--yellow);
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  padding-bottom: 120px;
+}
+
+.resume-card {
+  padding: 32px;
+  border: 1px solid var(--line);
+  background: rgba(255, 253, 245, 0.7);
+  box-shadow: 8px 8px 0 var(--orange);
+}
+
+.resume-card h2 {
+  margin: 16px 0 18px;
+  font-size: clamp(2rem, 3.6vw, 3.8rem);
+}
+
+.resume-card li,
+.resume-card p {
+  color: var(--ink);
+}
+
+.resume-card ul {
+  padding-left: 20px;
+}
+
+.resume-tags,
+.resume-language-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 18px;
+}
+
+.resume-tags span,
+.resume-language-grid span {
+  padding: 8px 11px;
+  border: 2px solid var(--green);
+  color: var(--green-dark);
+  font-weight: 800;
+}
+
+.resume-link-stack {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.resume-link-stack a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--green-dark);
+  font-weight: 900;
+}
+
+.dns-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  padding-bottom: 120px;
+}
+
+.dns-grid article {
+  min-height: 250px;
+  padding: 30px;
+  border: 2px solid var(--green);
+  background: rgba(255, 253, 245, 0.72);
+}
+
+.dns-grid article > span {
+  color: var(--orange);
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.dns-grid h2 {
+  margin: 15px 0 18px;
+}
+
+.dns-grid p {
+  margin: 0;
+  color: var(--ink);
+}
+
+@media (max-width: 720px) {
+  .resume-grid,
+  .dns-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    gap: 12px;
+  }
+}
+
+
+/* ===== Final requested visual polish v2 ===== */
+
+.about-me-label,
+.section-heading .eyebrow,
+.resume-card .eyebrow,
+.gallery-intro .eyebrow,
+.projects-intro .eyebrow {
+  font-weight: 950;
+}
+
+.value-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55em;
+  font-size: 1em;
+  font-weight: 900;
+}
+
+.value-line svg {
+  width: 1em;
+  height: 1em;
+  color: var(--orange);
+  flex: 0 0 auto;
+}
+
+.interest-grid article {
+  background: var(--yellow);
+}
+
+.interest-grid article p {
+  color: var(--orange);
+  font-weight: 900;
+}
+
+.resume-card .eyebrow {
+  color: #141414;
+  font-weight: 950;
+}
+
+.resume-card p,
+.resume-card li,
+.resume-language-grid span,
+.resume-tags span {
+  color: #262626;
+}
+
+.resume-card h2 {
+  color: #111111;
+}
+
+.resume-card ul {
+  margin-top: 18px;
+}
+
+.resume-bullet-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resume-bullet-list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #262626;
+}
+
+.resume-bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  color: var(--orange);
+  font-size: 1.25em;
+  font-weight: 950;
+}
+
+.resume-language-grid span {
+  border-color: var(--green);
+  color: #262626;
+  font-weight: 850;
+}
+
+.resume-link-stack a {
+  color: var(--green-dark);
+  font-weight: 950;
+}
+
+.resume-card.links-card {
+  box-shadow: none;
+}
+
+.contact-intro {
+  color: #171717;
+  font-weight: 800;
+}
+
+.featured-result {
+  color: var(--orange);
+  font-weight: 900;
+}
+
+.projects-intro > h1 {
+  font-weight: 950;
+}
+
+.hero-welcome {
+  font-weight: 950;
+}
+
+.project-cta .cta-yellow {
+  color: #fff;
+}
+
+.case-result h3 {
+  color: var(--yellow);
+  font-weight: 950;
+}
+
+.tag-row span {
+  border: 2px solid var(--green);
+}
+
+.sample-button {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #fff;
+  font-weight: 900;
+}
+
+
+
+/* ===== Final requested visual polish v3 ===== */
+
+/* ABOUT: one clean horizontal line, same typography for all three statements */
+.values-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.15rem;
+  flex-wrap: nowrap;
+}
+
+.values-row .value-text {
+  color: #ffffff;
+  font-family: inherit;
+  font-size: clamp(1.55rem, 2.15vw, 2.35rem);
+  font-weight: 950;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  flex: 0 1 auto;
+}
+
+.values-row .value-heart {
+  flex: 0 0 auto;
+  width: clamp(1.45rem, 2vw, 2.1rem);
+  height: clamp(1.45rem, 2vw, 2.1rem);
+  color: var(--orange);
+}
+
+/* ABOUT: all green sub-labels use one stronger weight */
+.about-me-label,
+.about-hero .eyebrow,
+.interests-section .eyebrow,
+.section-heading .eyebrow,
+.gallery-intro .eyebrow,
+.projects-intro .eyebrow,
+.resume-card .eyebrow,
+.resume-intro .eyebrow {
+  color: var(--green);
+  font-weight: 950;
+}
+
+/* ABOUT: yellow cards, same light yellow family as the site's existing yellow */
+.interest-grid article {
+  background: var(--yellow);
+  border-color: rgba(72, 137, 82, 0.22);
+  transform: none;
+  rotate: none;
+}
+
+.interest-grid article:nth-child(1),
+.interest-grid article:nth-child(2),
+.interest-grid article:nth-child(3),
+.interest-grid article:nth-child(4) {
+  transform: none;
+  rotate: none;
+}
+
+.interest-grid article h3 {
+  color: var(--green);
+  font-weight: 900;
+}
+
+/* RESUME */
+.resume-card .eyebrow {
+  color: var(--green);
+  font-weight: 950;
+}
+
+.resume-orange-title {
+  color: var(--orange);
+}
+
+.resume-card > p,
+.resume-card li {
+  color: #242424;
+}
+
+.resume-bullet-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resume-bullet-list li {
+  position: relative;
+  padding-left: 1.35rem;
+  margin-bottom: 0.7rem;
+  color: #242424;
+  font-weight: 700;
+}
+
+.resume-bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: -0.08em;
+  color: var(--orange);
+  font-size: 1.35em;
+  font-weight: 950;
+}
+
+.resume-language-grid span {
+  color: #242424;
+  font-weight: 800;
+}
+
+/* CV download stays visually identical to the site's existing CTA style */
+.resume-actions .button {
+  font-weight: 900;
+}
+
+/* Mobile safety for the single-line About values */
+@media (max-width: 900px) {
+  .values-row {
+    gap: 0.75rem;
+  }
+
+  .values-row .value-text {
+    font-size: clamp(1rem, 3vw, 1.45rem);
+    white-space: normal;
+  }
+}
+
+@media (max-width: 640px) {
+  .values-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    align-items: center;
+  }
+
+  .values-row .value-text {
+    font-size: 0.95rem;
+    line-height: 1.05;
+  }
+
+  .values-row .value-heart {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+
+
+/* CV orange headings */
+.resume-card h2.resume-orange-title {
+  color: var(--orange) !important;
+}
+
+.resume-card .resume-orange-title {
+  color: var(--orange) !important;
+}
+
+/* ===== Butter yellow interest cards ===== */
+/* ===== Butter yellow interest cards ===== */
+.interest-grid article {
+  background-color: #FEFF83 !important;
+}
+
+/* ===== Project case-study titles orange ===== */
+/* ===== Project case-study titles orange ===== */
+.case-study .case-body h2 {
+  color: var(--orange) !important;
+}
+
+
+/* ===== Gold yellow interest cards ===== */
+.interest-grid article {
+  background-color: #FFDF00 !important;
+}
+
+
+/* ===== Final requested colors + typography ===== */
+
+/* About: yellow cards */
+.interest-grid article {
+  background-color: #EBE939 !important;
+}
+
+/* About: green values band typography */
+.values-row .value-text {
+  font-family: "MS PGothic", sans-serif !important;
+  color: #ffffff !important;
+  font-weight: 900;
+}
+
+/* About: orange hearts */
+.values-row .value-heart {
+  color: var(--orange) !important;
+}
+
+/* Projects: case-study titles */
+.case-study .case-body h2 {
+  color: #B85328 !important;
+}
+
+
+/* ===== Final color corrections ===== */
+
+/* About cards */
+.interest-grid article {
+  background-color: #8C9B3E !important;
+}
+
+/* Main navigation background */
+.site-header {
+  background-color: #FBEBE9 !important;
+}
+
+
+/* ===== Gallery card background ===== */
+.gallery-card,
+.gallery-image-wrap {
+  background-color: #FBEBE9 !important;
+}
+
+
+/* Gallery card background */
+.gallery-card {
+  background-color: #F7D7D3 !important;
+}
+.gallery-image-wrap {
+  background-color: transparent !important;
+}
+
+
+
+
+/* ===== Final header boundary ===== */
+.site-header {
+  border-bottom: 3px solid #2E6F40 !important;
+}
+
+
+/* ===== Remove internal project section borders ===== */
+.case-study-list,
+.case-study,
+.case-study + .case-study {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+
+/* ===== Canary yellow interest cards ===== */
+.interest-grid article {
+  background-color: #FFFB60 !important;
+}
+
+
+/* ===== About interest cards: green frame and dividers ===== */
+.interest-grid {
+  border: 2px solid #2E6F40 !important;
+}
+
+.interest-grid article {
+  border-top: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: 2px solid #2E6F40 !important;
+}
+
+.interest-grid article:last-child {
+  border-right: none !important;
+}
+
+
+/* ===== Gallery caption/card borders ===== */
+.gallery-caption {
+  background-color: #F7D7D3 !important;
+  border: 2px solid #2E6F40 !important;
+}
+
+.gallery-card {
+  border: none !important;
+}
+
+
+/* ===== About interest descriptions ===== */
+.interest-grid article p {
+  color: #CA5221 !important;
+}
+
+
+/* ===== Final Gallery frame + numbering polish ===== */
+
+/* Gallery card frame: same green tone and thickness everywhere */
+.gallery-card,
+.gallery-caption {
+  border-color: #2E6F40 !important;
+}
+
+.gallery-caption {
+  border-width: 2px !important;
+  border-style: solid !important;
+}
+
+/* Keep image edge/frame consistent with the card frame */
+.gallery-image-wrap {
+  border-color: #2E6F40 !important;
+}
+
+/* Gallery 01 / 02 / 03 numbering: slightly darker orange */
+.gallery-caption > span {
+  color: #A94820 !important;
+}
+
+
+/* ===== Gallery frame thickness consistency ===== */
+.gallery-image-wrap,
+.gallery-caption {
+  border: 2px solid #2E6F40 !important;
+  box-sizing: border-box;
+}
+
+/* Avoid double-thick shared edge */
+.gallery-caption {
+  border-top: 0 !important;
+}
+
+
+/* ===== Resume card green frame ===== */
+.resume-card {
+  border: 2px solid #2E6F40 !important;
+  box-sizing: border-box;
+}
+
+
+/* ===== Resume project-details interaction ===== */
+.resume-card .text-link:hover,
+.resume-card .text-link:focus-visible {
+  background-color: #2E6F40 !important;
+  color: #ffffff !important;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+
+/* ===== Featured work highlighted text ===== */
+.featured-index,
+.featured-row > div > p,
+.featured-result {
+  color: #B84A1E !important;
+}
+
+
+/* ===== Featured work yellow text ===== */
+.featured-index,
+.featured-row > div > p,
+.featured-result {
+  color: #FFFB60 !important;
+}
+
+
+/* ===== Selected section/category headings: stronger weight only ===== */
+.hero-welcome,
+.about-me-label,
+.section-heading .eyebrow,
+.resume-intro .eyebrow,
+.interests-section .eyebrow,
+.projects-intro .eyebrow,
+.home-about .eyebrow,
+.case-meta p {
+  font-weight: 900 !important;
+}
+
+
+/* ===== Home evaluation criteria labels ===== */
+.criteria-grid .criterion h3 {
+  color: var(--orange) !important;
+}
+
+
+/* ===== Featured case study hover / focus ===== */
+.featured-row:hover,
+.featured-row:focus-visible {
+  background-color: var(--orange) !important;
+  color: #ffffff !important;
+}
+
+.featured-row:hover h3,
+.featured-row:focus-visible h3,
+.featured-row:hover p,
+.featured-row:focus-visible p,
+.featured-row:hover .featured-result,
+.featured-row:focus-visible .featured-result {
+  color: #ffffff !important;
+}
+
+
+/* ===== Interactive text links ===== */
+
+.home-about .text-link {
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease, padding 180ms ease;
+}
+
+.home-about .text-link:hover,
+.home-about .text-link:focus-visible,
+.home-about .text-link:active {
+  background-color: #2E6F40 !important;
+  color: #ffffff !important;
+  padding: 8px 12px;
+  transform: translateY(-2px);
+}
+
+/* ===== Animated sample buttons ===== */
+
+.sample-button {
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.sample-button:hover,
+.sample-button:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 0 #2E6F40;
+}
+
+.sample-button:active {
+  transform: translateY(1px);
+  box-shadow: 1px 1px 0 #2E6F40;
+}
+
+
+/* ===== Header Say Hello border ===== */
+.header-cta {
+  border: 2px solid #4A8059 !important;
+}
+
+
+/* ===== FINAL strong green labels ===== */
+.hero-welcome,
+.about-me-label,
+.approach-section .section-heading .eyebrow,
+.featured-work .section-heading .eyebrow,
+.resume-intro .eyebrow,
+.interests-section .section-heading .eyebrow,
+.projects-intro .eyebrow,
+.home-about .eyebrow,
+.case-meta p {
+  font-weight: 900 !important;
+  -webkit-text-stroke: 0.28px currentColor;
+}
+
+
+/* ===== Gallery numbering final orange ===== */
+.gallery-caption > span {
+  color: #D95B27 !important;
+}
+
+
+
+
+
+
+
+
+/* ===== Home evaluation icons ===== */
+.criteria-grid .criterion svg {
+  color: #B85328 !important;
+  stroke: #B85328 !important;
+}
+
+
+
+
+/* ===== Evaluation criteria: yellow and bold ===== */
+.criteria-grid .criterion h3 {
+  color: #FFFB60 !important;
+  font-weight: 900 !important;
+}
+
+
+
+/* ===== Restore original YB logo appearance ===== */
+.hero .portrait-frame {
+  background: var(--orange) !important;
+}
+
+.hero .portrait-frame .portrait-inner {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.hero .portrait-frame .portrait-inner .portrait {
+  background: var(--paper) !important;
+  border: none !important;
+  mix-blend-mode: normal !important;
+}
+
+
+/* ===== Evaluation criterion cards ===== */
+.criteria-grid .criterion {
+  border: 2px solid #2E6F40 !important;
+  box-sizing: border-box;
+}
+
+
+/* ===== Home criteria orange correction ===== */
+.criteria-grid .criterion h3 {
+  color: #D95B27 !important;
+}
+
+.criteria-grid .criterion svg {
+  color: #D95B27 !important;
+  stroke: #D95B27 !important;
+}
+
+
+/* ===== Project challenge/approach/signal frames ===== */
+.case-columns > div {
+  border: 2px solid #2E6F40 !important;
+  box-sizing: border-box;
+}
+
+
+/* ===== Final strong green labels ===== */
+
+/* Gallery + Contact section headings */
+.gallery-intro .eyebrow,
+.contact-copy .eyebrow {
+  color: #2E6F40 !important;
+  font-weight: 950 !important;
+  -webkit-text-stroke: 0.25px currentColor;
+}
+
+/* Contact labels: EMAIL / LINKEDIN / GITHUB / CV / BOOKING */
+.social-list a small {
+  display: block;
+  color: #2E6F40 !important;
+  font-size: 0.92rem !important;
+  line-height: 1;
+  font-weight: 950 !important;
+  letter-spacing: 0.08em;
+}
+
+/* CV label explicitly large and uppercase */
+.social-list a small:first-letter {
+  text-transform: uppercase;
+}
+
+/* Keep the contact value below the label balanced */
+.social-list a span {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+
+/* ===== Booking label ===== */
+.social-list a small {
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+  white-space: nowrap !important;
+  font-weight: 950 !important;
+}
+
+
+/* ===== BOOKING must stay one word ===== */
+.social-list a small {
+  letter-spacing: 0 !important;
+  word-spacing: 0 !important;
+  white-space: nowrap !important;
+  font-weight: 950 !important;
+}
+
+
+/* Remove green frame from project challenge/approach/signal cards */
+.case-columns > div {
+  border: none !important;
+}

@@ -8,7 +8,7 @@ export const Route = createFileRoute('/projects')({ component: ProjectsPage })
 function ProjectsPage() {
   return (
     <div className="page-wrap">
-      <section className="page-intro page-grid">
+      <section className="page-intro page-grid projects-intro">
         <span className="eyebrow">Projects &amp; case studies</span>
         <h1>Complex questions.<br /><em>Clear decisions.</em></h1>
         <p>
@@ -24,16 +24,39 @@ function ProjectsPage() {
               <span>{study.number}</span>
               <p>{study.category}</p>
             </div>
+
             <div className="case-body">
               <h2>{study.title}</h2>
+
               <div className="case-columns">
-                <div><h3>The challenge</h3><p>{study.problem}</p></div>
-                <div><h3>My approach</h3><p>{study.action}</p></div>
-                <div className="case-result"><h3>The signal</h3><p>{study.result}</p></div>
+                <div>
+                  <h3>The challenge</h3>
+                  <p>{study.problem}</p>
+                </div>
+                <div>
+                  <h3>My approach</h3>
+                  <p>{study.action}</p>
+                </div>
+                <div className="case-result">
+                  <h3>The signal</h3>
+                  <p>{study.result}</p>
+                </div>
               </div>
+
               <div className="tag-row">
                 {study.tags.map((tag) => <span key={tag}>{tag}</span>)}
               </div>
+
+              {study.sampleUrl && (
+                <a
+                  className="sample-button"
+                  href={study.sampleUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View a sample <ArrowUpRight size={15} />
+                </a>
+              )}
             </div>
           </article>
         ))}
