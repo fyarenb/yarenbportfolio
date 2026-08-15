@@ -1291,3 +1291,22 @@ body {
   white-space: nowrap !important;
   font-kerning: normal !important;
 }
+
+
+/* ===== Final Contact typography ===== */
+
+.contact-copy .contact-intro {
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+  font-kerning: normal !important;
+}
+
+.social-list a small.booking-label {
+  display: block !important;
+  width: fit-content !important;
+  letter-spacing: 0 !important;
+  word-spacing: 0 !important;
+  white-space: nowrap !important;
+  font-kerning: normal !important;
+  font-variant: normal !important;
+}

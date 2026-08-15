@@ -11,7 +11,7 @@ function ContactPage() {
         <h1>Let’s make the answer<br /><em>better together.</em></h1>
 
         <p className="contact-intro">
-          I’m open to AI evaluation opportunities, search-quality projects, multilingual workflows,
+          I'm open to AI evaluation opportunities, search-quality projects, multilingual workflows,
           and thoughtful collaborations.
         </p>
 
@@ -42,7 +42,7 @@ function ContactPage() {
 
           <a href="https://wa.me/905365027574" target="_blank" rel="noreferrer">
             <CalendarDays />
-            <span><small>BOOKING</small>Message me on WhatsApp</span>
+            <span><small className="booking-label">BOOKING</small>Message me on WhatsApp</span>
             <ArrowUpRight />
           </a>
         </div>
