@@ -7,7 +7,7 @@ export const caseStudies = [
     problem: 'Generative AI can sound certain while being factually wrong, unsafe, incomplete, or subtly misleading.',
     action: 'Applied a four-part framework—Relevance, Safety, Accuracy, and Readability—using primary-source checks, language matching, and explicit hallucination flags.',
     result: 'Produced consistent benchmark data that helped teams improve response quality and reduce hallucinations across model pipelines.',
-    resultShort: 'Sharper benchmarks. Fewer hallucinations.',
+    resultShort: 'Sharper benchmarks, fewer hallucinations.',
     tags: ['ChatGPT', 'Perplexity', 'Yandex AI', 'Hallucination detection'],
   },
   {
