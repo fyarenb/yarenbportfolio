@@ -1969,3 +1969,104 @@ body {
 .values-band span {
   font-family: "MS PGothic", sans-serif !important;
 }
+
+
+
+/* =========================================================
+   MOBILE FINAL FIXES
+   Home desktop styling is untouched.
+   ========================================================= */
+
+@media (max-width: 720px) {
+
+  /* 1. MOBILE HEADER — keep Say hello visible */
+  .site-header {
+    position: relative !important;
+    overflow: visible !important;
+  }
+
+  .nav-links {
+    margin-right: 92px !important;
+    padding-right: 8px !important;
+    gap: 13px !important;
+    min-width: 0 !important;
+  }
+
+  .nav-links a {
+    font-size: 0.62rem !important;
+    white-space: nowrap !important;
+  }
+
+  .header-cta {
+    position: absolute !important;
+    top: 8px !important;
+    right: 8px !important;
+    z-index: 50 !important;
+    display: inline-flex !important;
+    min-height: 42px !important;
+    padding: 8px 10px !important;
+    font-size: 0.62rem !important;
+    white-space: nowrap !important;
+  }
+
+
+  /* 2. YELLOW INTEREST GRID — green frame + green separators */
+  .interest-grid {
+    border: 2px solid #2E6F40 !important;
+    box-sizing: border-box !important;
+  }
+
+  .interest-grid article {
+    border-right: 0 !important;
+    border-bottom: 2px solid #2E6F40 !important;
+    box-sizing: border-box !important;
+  }
+
+  .interest-grid article:last-child {
+    border-bottom: 0 !important;
+  }
+
+
+  /* 3. GREEN VALUES BAND — keep three statements horizontal */
+  .values-band .page-grid {
+    display: grid !important;
+    grid-template-columns: 1fr auto 1fr auto 1fr !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    flex-direction: unset !important;
+    width: 100% !important;
+  }
+
+  .values-band span {
+    font-size: 0.82rem !important;
+    line-height: 1.15 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    display: block !important;
+  }
+
+  .values-band i {
+    font-size: 1rem !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+  }
+
+
+  /* 4. GALLERY — show full image, don't crop/zoom */
+  .gallery-image-wrap,
+  .gallery-card.tall .gallery-image-wrap {
+    min-height: 0 !important;
+    height: auto !important;
+    overflow: hidden !important;
+  }
+
+  .gallery-image-wrap img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    object-fit: contain !important;
+    object-position: center !important;
+  }
+}
