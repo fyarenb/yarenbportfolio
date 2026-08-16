@@ -1551,3 +1551,77 @@ body {
 .gallery-grid .gallery-card:nth-child(2) {
   background: transparent !important;
 }
+
+
+/* ===== Resume intro paragraph: single line ===== */
+.resume-intro > p {
+  font-style: italic !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  transform: translateY(2.2em) !important;
+  width: max-content !important;
+  max-width: none !important;
+  white-space: nowrap !important;
+}
+
+
+/* ===== Resume intro paragraph final alignment ===== */
+.resume-intro > p {
+  font-style: italic !important;
+  white-space: nowrap !important;
+  width: max-content !important;
+  max-width: none !important;
+  margin-left: 2.2em !important;
+  transform: translateY(2.2em) !important;
+}
+
+
+/* ===== Resume download row ===== */
+.resume-download-row {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  margin-top: 1.5rem;
+}
+
+.resume-download-row .resume-actions {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.resume-side-intro {
+  margin: 0 !important;
+  color: inherit !important;
+  font-style: italic !important;
+  font-family: inherit !important;
+  white-space: normal !important;
+  max-width: 720px !important;
+  line-height: 1.45 !important;
+  transform: none !important;
+}
+
+@media (max-width: 900px) {
+  .resume-download-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .resume-side-intro {
+    max-width: 100% !important;
+  }
+}
+
+
+/* ===== Resume side intro: single line ===== */
+.resume-side-intro {
+  white-space: nowrap !important;
+  width: max-content !important;
+  max-width: none !important;
+}
+
+
+/* ===== Resume side intro: move slightly right ===== */
+.resume-side-intro {
+  margin-left: 2.2em !important;
+}

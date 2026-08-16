@@ -9,15 +9,17 @@ function ResumePage() {
       <section className="page-intro resume-intro">
         <span className="eyebrow">CV / RESUME</span>
         <h1>Fatma Yaren<br /><em>Birben.</em></h1>
-        <p>
-          Search Quality &amp; AI Evaluation Specialist with an analytical, multilingual,
-          and evidence-first approach to AI, search, and digital work.
-        </p>
+        <div className="resume-download-row">
+          <div className="resume-actions">
+            <a className="button button-primary" href="/assets/FYB-CV.docx" download>
+              Download CV
+            </a>
+          </div>
 
-        <div className="resume-actions">
-          <a className="button button-primary" href="/assets/FYB-CV.docx" download>
-            Download CV
-          </a>
+          <p className="resume-side-intro">
+            Search Quality &amp; AI Evaluation Specialist with an analytical, multilingual,
+            and evidence-first approach to AI, search, and digital work.
+          </p>
         </div>
       </section>
 
