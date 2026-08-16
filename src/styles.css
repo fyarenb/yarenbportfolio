@@ -1625,3 +1625,347 @@ body {
 .resume-side-intro {
   margin-left: 2.2em !important;
 }
+
+
+/* ===== Project detail cards green borders ===== */
+.case-columns > div {
+  border: 2px solid #2E6F40 !important;
+  box-sizing: border-box;
+}
+
+.case-columns > div:last-child {
+  border-right: 2px solid #2E6F40 !important;
+}
+
+
+/* ===== Non-Home page sections: one line upward ===== */
+.page-wrap > section {
+  transform: translateY(-1.55em);
+}
+
+
+/* ===== Non-Home pages: move each main section upward ===== */
+.page-wrap > section {
+  position: relative !important;
+  top: -1.55em !important;
+}
+
+/* Contact page is itself the page-wrap */
+.contact-page {
+  position: relative !important;
+  top: -1.55em !important;
+}
+
+
+/* ===== Contact final vertical position ===== */
+.contact-page {
+  top: -0.775em !important;
+}
+
+
+/* ===== About story paragraphs final positioning ===== */
+.story-columns {
+  align-items: start !important;
+}
+
+.story-columns p {
+  font-style: italic !important;
+}
+
+.story-columns p:first-child {
+  transform: translateY(0.775em) !important;
+}
+
+.story-columns p:nth-child(2) {
+  transform: translateY(1.55em) !important;
+}
+
+
+/* ===== Contact final layout ===== */
+
+/* Move the Contact section one step down */
+.contact-page {
+  top: 0 !important;
+}
+
+/* Keep the Contact headline on one line */
+.contact-copy h1 {
+  white-space: nowrap !important;
+}
+
+/* Drop the form so it sits opposite the left social/contact list */
+.contact-page .form-card {
+  margin-top: 10.5rem !important;
+}
+
+/* Keep the two-column alignment on desktop */
+.contact-page {
+  align-items: start !important;
+}
+
+@media (max-width: 900px) {
+  .contact-copy h1 {
+    white-space: normal !important;
+  }
+
+  .contact-page .form-card {
+    margin-top: 2rem !important;
+  }
+}
+
+
+/* ===== Contact form visibility only ===== */
+.contact-page .form-card {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  margin-top: 0 !important;
+  transform: none !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+
+/* ===== Contact headline + form size correction ===== */
+.contact-copy h1 {
+  white-space: normal !important;
+  max-width: 620px !important;
+  line-height: 0.98 !important;
+}
+
+.contact-page .form-card {
+  width: 100% !important;
+  max-width: 620px !important;
+  min-height: 520px !important;
+  padding: 38px !important;
+  margin-top: 0 !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (max-width: 900px) {
+  .contact-copy h1 {
+    max-width: 100% !important;
+  }
+
+  .contact-page .form-card {
+    max-width: 100% !important;
+    min-height: auto !important;
+    padding: 28px !important;
+  }
+}
+
+
+/* ===== Contact: move intro to right and form lower ===== */
+.contact-form-side {
+  display: block !important;
+  min-width: 0;
+}
+
+.contact-form-side > .contact-intro {
+  font-style: italic !important;
+  margin: 0 !important;
+}
+
+.contact-form-side > .form-card {
+  margin-top: 6rem !important;
+}
+
+
+/* ===== Contact right column: move intro + form down ===== */
+.contact-form-side {
+  transform: translateY(6.2em) !important;
+}
+
+
+/* ===== Contact form: move 2 spaces up ===== */
+.contact-form-side {
+  transform: translateY(-3.1em) !important;
+}
+
+
+/* ===== Contact links: one line down ===== */
+.contact-copy .social-list {
+  transform: translateY(1.55em) !important;
+}
+
+
+/* ===== Contact links: one additional line down ===== */
+.contact-copy .social-list {
+  transform: translateY(3.1em) !important;
+}
+
+
+/* ===== Feedback / Suggestions ===== */
+.feedback-card {
+  width: 100%;
+  margin-top: 32px;
+  padding: 28px 32px 30px;
+  background: #F7D7D3 !important;
+  border: 2px solid #2E6F40 !important;
+  box-sizing: border-box;
+}
+
+.feedback-card .eyebrow {
+  display: block;
+  margin-bottom: 14px;
+  color: #2E6F40 !important;
+  font-weight: 950 !important;
+}
+
+.feedback-input {
+  display: block;
+  width: 100%;
+  min-height: 130px;
+  padding: 16px;
+  box-sizing: border-box;
+  resize: vertical;
+  border: 1px solid #2E6F40 !important;
+  background: #FFFFFF !important;
+  color: #24231f !important;
+  font: inherit;
+  outline: none;
+}
+
+.feedback-input::placeholder {
+  color: #555 !important;
+  opacity: 1;
+}
+
+.feedback-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+  min-height: 48px;
+  padding: 0 20px;
+  border: 1px solid #2E6F40;
+  background: #2E6F40;
+  color: #FFFFFF;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 180ms ease;
+}
+
+.feedback-submit:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 #D95B27;
+}
+
+@media (max-width: 900px) {
+  .feedback-card {
+    padding: 24px;
+  }
+}
+
+
+/* ===== Feedback box: half-line down ===== */
+.feedback-card {
+  transform: translateY(0.775em) !important;
+}
+
+
+/* ===== Feedback box aligned with Booking bottom ===== */
+.feedback-card {
+  position: relative !important;
+  transform: translateY(1.55em) !important;
+  min-height: 270px !important;
+  box-sizing: border-box !important;
+}
+
+
+/* ===== Feedback box: align bottom with BOOKING line ===== */
+.feedback-card {
+  transform: translateY(4.1em) !important;
+}
+
+
+/* ===== FINAL Feedback / Booking bottom alignment ===== */
+.contact-copy .social-list {
+  transform: translateY(3.1em) !important;
+}
+
+.feedback-card {
+  position: relative !important;
+  top: 4.2rem !important;
+  transform: none !important;
+  min-height: 270px !important;
+  box-sizing: border-box !important;
+}
+
+
+/* ===== About story lead: slightly lighter black ===== */
+.story-lead {
+  color: #343434 !important;
+}
+
+
+/* ===== About second story paragraph ===== */
+.story-columns p:nth-child(2) {
+  color: #343434 !important;
+  transform: translateY(3.1em) !important;
+}
+
+
+/* ===== Restore International Relations paragraph color ===== */
+.story-columns p:first-child {
+  color: var(--ink) !important;
+}
+
+
+/* ===== International Relations paragraph orange ===== */
+.story-columns p:first-child {
+  color: #B85328 !important;
+}
+
+
+/* ===== About left story paragraph ===== */
+.story-columns p:first-child {
+  color: #B85328 !important;
+}
+
+
+/* ===== About story text: color only ===== */
+.story-columns p:first-child,
+.story-columns p:nth-child(2),
+.story-columns p:nth-child(3) {
+  color: #B85328 !important;
+}
+
+.story-lead {
+  color: #B85328 !important;
+}
+
+
+/* ===== About Today paragraph color ===== */
+.story-columns p:nth-child(2) {
+  color: #2C2A29 !important;
+}
+
+
+/* ===== About AI marketing paragraph color ===== */
+.story-columns p:nth-child(3) {
+  color: #2C2A29 !important;
+}
+
+
+/* ===== Today, I apply paragraph color ===== */
+.story-columns p:nth-child(2) {
+  color: #2C2A29 !important;
+}
+
+
+/* ===== Today, I apply paragraph: exact color ===== */
+.story-columns > p:first-child {
+  color: #2C2A29 !important;
+}
+
+
+/* ===== Green values band typography ===== */
+.values-band span {
+  font-family: "MS PGothic", sans-serif !important;
+}

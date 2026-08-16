@@ -10,11 +10,6 @@ function ContactPage() {
         <span className="eyebrow">Contact</span>
         <h1>Let’s make the answer<br /><em>better together.</em></h1>
 
-        <p className="contact-intro">
-          I'm open to AI evaluation opportunities, search-quality projects, multilingual workflows,
-          and thoughtful collaborations.
-        </p>
-
         <div className="social-list">
           <a href="mailto:yarenbirben11@gmail.com">
             <Mail />
@@ -42,8 +37,9 @@ function ContactPage() {
         </div>
       </section>
 
-      <section className="form-card">
-        <form
+      <section className="contact-form-side">
+        <section className="form-card">
+          <form
           name="contact"
           method="POST"
           data-netlify="true"
@@ -85,7 +81,21 @@ function ContactPage() {
           <button className="button button-primary submit-button" type="submit">
             Send message <ArrowUpRight size={18} />
           </button>
-        </form>
+          </form>
+        </section>
+
+        <section className="feedback-card">
+          <span className="eyebrow">Feedback / Suggestions</span>
+          <textarea
+            className="feedback-input"
+            placeholder="Share your feedback or suggestion..."
+            aria-label="Feedback or suggestions"
+          />
+          <button type="button" className="feedback-submit">
+            Submit Feedback
+            <ArrowUpRight size={18} aria-hidden="true" />
+          </button>
+        </section>
       </section>
     </div>
   )
