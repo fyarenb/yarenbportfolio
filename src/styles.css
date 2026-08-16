@@ -2386,3 +2386,18 @@ body {
   position: relative !important;
   left: -1.55em !important;
 }
+
+
+/* ===== Projects intro description: straight text only ===== */
+.projects-intro > p {
+  font-style: normal !important;
+  transform: none !important;
+}
+
+
+/* ===== Projects intro description: MS PGothic + straight ===== */
+.projects-intro > p {
+  font-family: "MS PGothic", sans-serif !important;
+  font-style: normal !important;
+  transform: none !important;
+}
