@@ -3555,3 +3555,27 @@ body {
   }
 }
 
+
+/* ===== Gallery: SELECTED EVIDENCE — same color on desktop and mobile ===== */
+.gallery-intro .eyebrow {
+  color: #154406 !important;
+}
+
+
+/* ===== SELECTED EVIDENCE — same color everywhere ===== */
+.gallery-intro .eyebrow {
+  color: #28600c !important;
+}
+
+
+/* ===== SELECTED EVIDENCE — final shared color ===== */
+.gallery-intro .eyebrow {
+  color: #3d8219 !important;
+}
+
+
+/* ===== SELECTED EVIDENCE — desktop + mobile ===== */
+.gallery-intro .eyebrow {
+  color: #468F51 !important;
+}
+
