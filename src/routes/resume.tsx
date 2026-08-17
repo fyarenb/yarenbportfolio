@@ -11,7 +11,7 @@ function ResumePage() {
         <h1>Fatma Yaren<br /><em>Birben.</em></h1>
         <div className="resume-download-row">
           <div className="resume-actions">
-            <a className="button button-primary" href="/assets/FYB-CV.docx" download>
+            <a className="button button-primary" href="/assets/FYB-CV.pdf" download>
               Download CV
             </a>
           </div>
