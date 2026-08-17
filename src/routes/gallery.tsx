@@ -19,7 +19,8 @@ function GalleryPage() {
           <article className={`gallery-card ${item.aspect}`} key={item.src}>
             {index === 1 && (
               <p className="gallery-feature-note">
-                Screens, studies, and artifacts from multilingual research,<br />
+                Screens, studies, and artifacts<br />
+                from multilingual research,<br />
                 search-quality workflows, and strategy projects.
               </p>
             )}

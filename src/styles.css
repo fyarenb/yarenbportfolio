@@ -2401,3 +2401,1157 @@ body {
   font-style: normal !important;
   transform: none !important;
 }
+
+
+
+/* =========================================================
+   MOBILE FINAL FIXES — desktop remains untouched
+   ========================================================= */
+@media (max-width: 760px) {
+
+  html,
+  body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+  }
+
+  /* ---------- General mobile sizing ---------- */
+  .page-grid {
+    width: calc(100% - 32px) !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ---------- Home: 01 heading ---------- */
+  .approach-section {
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+  }
+
+  .approach-section > .section-heading {
+    position: static !important;
+    transform: none !important;
+    left: 0 !important;
+    top: 0 !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .approach-section > .section-heading .eyebrow {
+    position: static !important;
+    top: 0 !important;
+  }
+
+  /* ---------- Home: criteria cards ---------- */
+  .criteria-grid {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+
+  .criterion {
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .criterion:last-child {
+    border-bottom: 0 !important;
+  }
+
+  /* ---------- Home: 02 Selected Case Studies ---------- */
+  .featured-work > .section-heading {
+    position: static !important;
+    transform: none !important;
+    left: 0 !important;
+    top: 0 !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .featured-work > .section-heading .eyebrow {
+    position: static !important;
+    top: 0 !important;
+  }
+
+  .featured-list {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .featured-row {
+    grid-template-columns: 40px minmax(0, 1fr) auto !important;
+    gap: 12px !important;
+    min-width: 0 !important;
+    padding-inline: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .featured-row > div,
+  .featured-row h3,
+  .featured-result {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .featured-row h3 {
+    overflow-wrap: anywhere !important;
+  }
+
+  /* ---------- Home: About section ---------- */
+  .home-about {
+    grid-template-columns: 1fr !important;
+    gap: 50px !important;
+    left: 0 !important;
+    transform: none !important;
+  }
+
+  .home-about-art,
+  .home-about > div:last-child {
+    position: static !important;
+    left: 0 !important;
+    transform: none !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .home-about-art {
+    width: min(75vw, 420px) !important;
+    margin-inline: auto !important;
+  }
+
+  .home-about h2,
+  .home-about p {
+    max-width: 100% !important;
+  }
+
+  /* ---------- About: Off screen / What keeps me curious ---------- */
+  .interests-section > .section-heading.compact {
+    position: static !important;
+    left: 0 !important;
+    transform: none !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .interest-grid {
+    width: 100% !important;
+    grid-template-columns: 1fr !important;
+    box-sizing: border-box !important;
+  }
+
+  .interest-grid article {
+    min-width: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--line) !important;
+  }
+
+  .interest-grid article:last-child {
+    border-bottom: 0 !important;
+  }
+
+  /* ---------- Projects intro ---------- */
+  .projects-intro h1 em {
+    position: static !important;
+    left: 0 !important;
+    transform: none !important;
+    white-space: normal !important;
+  }
+
+  .projects-intro > p {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    transform: none !important;
+  }
+
+  /* ---------- Projects case studies ---------- */
+  .case-study-list {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .case-study {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    min-width: 0 !important;
+    transform: none !important;
+  }
+
+  .case-meta,
+  .case-body {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .case-meta p {
+    position: static !important;
+    top: 0 !important;
+  }
+
+  .case-body h2 {
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .case-columns {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .case-columns > div {
+    min-width: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--line) !important;
+  }
+
+  .case-columns > div:last-child {
+    border-bottom: 0 !important;
+  }
+
+  /* ---------- Projects CTA ---------- */
+  .project-cta {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-inline: 0 !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+  }
+
+  /* ---------- Gallery ---------- */
+  .gallery-intro,
+  .gallery-grid,
+  .gallery-card,
+  .gallery-image-wrap,
+  .gallery-caption {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .gallery-card,
+  .gallery-card:nth-child(even),
+  .gallery-card:nth-child(odd) {
+    margin-top: 0 !important;
+    transform: none !important;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  /* ---------- Existing desktop positioning overrides: cancel on mobile ---------- */
+  .page-wrap > section {
+    transform: none !important;
+  }
+
+  .case-study:first-child {
+    transform: none !important;
+  }
+
+  .projects-intro > p,
+  .gallery-intro > p {
+    max-width: 100% !important;
+  }
+}
+
+
+
+/* =========================================================
+   FINAL MOBILE REPAIR
+   Desktop layout untouched.
+   ========================================================= */
+@media screen and (max-width: 760px) {
+
+  /* ---------- GLOBAL ---------- */
+
+  html,
+  body,
+  #root {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  img,
+  svg {
+    max-width: 100%;
+  }
+
+  .page-grid {
+    width: calc(100% - 32px) !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* =========================================================
+     HEADER
+     Keep HOME / PROJECTS / GALLERY / ABOUT / CV / CONTACT
+     and SAY HELLO visible on mobile.
+     ========================================================= */
+
+  .site-header {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    grid-template-columns: 48px minmax(0, 1fr) auto !important;
+    gap: 8px !important;
+    padding: 10px 10px !important;
+  }
+
+  .brand {
+    width: 48px !important;
+    height: 48px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+    min-width: 0 !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .nav-links a {
+    font-size: 0.58rem !important;
+    letter-spacing: 0.07em !important;
+    white-space: nowrap !important;
+  }
+
+  .header-cta {
+    padding: 8px 9px !important;
+    gap: 4px !important;
+    font-size: 0.62rem !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+
+
+  /* =========================================================
+     HOME — 01
+     ========================================================= */
+
+  .approach-section,
+  .approach-section > .section-heading {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+  }
+
+  .approach-section > .section-heading {
+    grid-template-columns: 54px minmax(0, 1fr) !important;
+    gap: 14px !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .approach-section > .section-heading .eyebrow {
+    position: static !important;
+    top: auto !important;
+    transform: none !important;
+  }
+
+  .approach-section > .section-heading h2 {
+    max-width: 100% !important;
+    overflow-wrap: normal !important;
+  }
+
+
+  /* ---------- HOME criteria / green frame ---------- */
+
+  .criteria-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    border: 2px solid var(--green) !important;
+    box-sizing: border-box !important;
+  }
+
+  .criterion,
+  .criterion:last-child {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    border-right: 0 !important;
+    border-bottom: 2px solid var(--green) !important;
+  }
+
+  .criterion:last-child {
+    border-bottom: 0 !important;
+  }
+
+
+  /* =========================================================
+     HOME — 02 SELECTED CASE STUDIES
+     ========================================================= */
+
+  .featured-work > .section-heading {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    grid-template-columns: 54px minmax(0, 1fr) !important;
+    gap: 14px !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .featured-work > .section-heading .eyebrow {
+    position: static !important;
+    top: auto !important;
+    transform: none !important;
+  }
+
+  .featured-work > .section-heading h2 {
+    max-width: 100% !important;
+    overflow-wrap: normal !important;
+  }
+
+  .featured-list {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .featured-row {
+    grid-template-columns: 38px minmax(0, 1fr) auto !important;
+    gap: 10px !important;
+    padding-inline: 0 !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+  }
+
+  .featured-row > div,
+  .featured-row h3,
+  .featured-result {
+    min-width: 0 !important;
+  }
+
+
+  /* =========================================================
+     HOME — TICKER
+     Don't crop the orange text on mobile.
+     ========================================================= */
+
+  .ticker {
+    overflow: hidden !important;
+    width: 100% !important;
+  }
+
+  .ticker > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 8px 12px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 6px 12px !important;
+    font-size: 0.92rem !important;
+    line-height: 1.2 !important;
+  }
+
+
+  /* =========================================================
+     HOME — ABOUT
+     ========================================================= */
+
+  .home-about {
+    grid-template-columns: 1fr !important;
+    gap: 46px !important;
+    width: calc(100% - 32px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+  }
+
+  .home-about-art,
+  .home-about > div:last-child {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .home-about-art {
+    width: min(72vw, 330px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .home-about h2,
+  .home-about p {
+    max-width: 100% !important;
+  }
+
+
+  /* =========================================================
+     PROJECTS — INTRO
+     ========================================================= */
+
+  .projects-intro {
+    position: relative !important;
+    left: 0 !important;
+    transform: none !important;
+    width: calc(100% - 32px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .projects-intro h1,
+  .projects-intro h1 em {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    max-width: 100% !important;
+  }
+
+  .projects-intro h1 em {
+    display: block !important;
+  }
+
+  .projects-intro > p {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    transform: none !important;
+  }
+
+
+  /* =========================================================
+     PROJECTS — 01 / 02 / 03 / 04 / 05
+     Keep numbers + green category labels inside viewport.
+     ========================================================= */
+
+  .case-study-list {
+    width: calc(100% - 32px) !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .case-study,
+  .case-study:first-child,
+  .case-study:nth-child(2),
+  .case-study:nth-child(3),
+  .case-study:nth-child(4),
+  .case-study:nth-child(5) {
+    position: relative !important;
+    left: 0 !important;
+    right: auto !important;
+    transform: none !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .case-meta,
+  .case-body {
+    position: relative !important;
+    left: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .case-meta > span {
+    position: static !important;
+    display: inline-block !important;
+  }
+
+  .case-meta p {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .case-body h2 {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transform: none !important;
+    overflow-wrap: normal !important;
+  }
+
+
+  /* ---------- Projects: challenge / approach / signal ---------- */
+
+  .case-columns {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    border: 2px solid var(--green) !important;
+    box-sizing: border-box !important;
+  }
+
+  .case-columns > div,
+  .case-columns > div:last-child {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    border-right: 0 !important;
+    border-bottom: 2px solid var(--green) !important;
+  }
+
+  .case-columns > div:last-child {
+    border-bottom: 0 !important;
+  }
+
+
+  /* =========================================================
+     GALLERY
+     ========================================================= */
+
+  .gallery-intro {
+    position: relative !important;
+    left: 0 !important;
+    transform: none !important;
+    width: calc(100% - 32px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-inline: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .gallery-intro .eyebrow,
+  .gallery-intro h1,
+  .gallery-intro > p {
+    position: static !important;
+    left: auto !important;
+    transform: none !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .gallery-intro > p {
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .gallery-grid {
+    width: calc(100% - 32px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    grid-template-columns: 1fr !important;
+    gap: 42px !important;
+    padding-inline: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .gallery-card,
+  .gallery-card:nth-child(even),
+  .gallery-card:nth-child(odd) {
+    position: static !important;
+    left: auto !important;
+    transform: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* =========================================================
+     ABOUT — OFF SCREEN / WHAT KEEPS ME CURIOUS
+     ========================================================= */
+
+  .interests-section {
+    width: calc(100% - 32px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .interests-section > .section-heading.compact {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .interests-section > .section-heading.compact .index-number,
+  .interests-section > .section-heading.compact .eyebrow,
+  .interests-section > .section-heading.compact h2 {
+    position: static !important;
+    transform: none !important;
+  }
+
+  .interest-grid {
+    width: 100% !important;
+    grid-template-columns: 1fr !important;
+    box-sizing: border-box !important;
+  }
+
+  .interest-grid article {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    border-right: 0 !important;
+    border-bottom: 2px solid var(--green) !important;
+  }
+
+  .interest-grid article:last-child {
+    border-bottom: 0 !important;
+  }
+
+
+  /* =========================================================
+     CV / RESUME + CONTACT
+     Don't let desktop positioning remove them from mobile.
+     ========================================================= */
+
+  .resume-page,
+  .resume-download-row,
+  .contact-page,
+  .contact-copy,
+  .form-card {
+    position: relative !important;
+    left: 0 !important;
+    right: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .contact-page {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+
+  .contact-copy h1 {
+    white-space: normal !important;
+    max-width: 100% !important;
+  }
+
+  .form-card {
+    margin-top: 0 !important;
+  }
+
+  .field-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .resume-download-row {
+    white-space: normal !important;
+    max-width: 100% !important;
+  }
+
+
+  /* =========================================================
+     CANCEL DESKTOP-ONLY VERTICAL TRANSFORMS ON MOBILE
+     ========================================================= */
+
+  .page-wrap > section,
+  .case-study:first-child,
+  .projects-intro > p,
+  .gallery-intro > p,
+  .story-columns p,
+  .contact-copy .social-list,
+  .feedback-card,
+  .contact-form-side {
+    transform: none !important;
+  }
+}
+
+
+
+/* =========================================================
+   MOBILE ONLY — final requested alignment fixes
+   Desktop remains completely untouched.
+   ========================================================= */
+@media screen and (max-width: 760px) {
+
+  /* =========================
+     HOME HEADER — restore HOME
+     ========================= */
+
+  .site-header {
+    grid-template-columns: 46px minmax(0, 1fr) auto !important;
+    gap: 5px !important;
+    padding-inline: 8px !important;
+    overflow: visible !important;
+  }
+
+  .brand {
+    width: 46px !important;
+    height: 46px !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    gap: 5px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    min-width: 0 !important;
+    overflow: visible !important;
+  }
+
+  .nav-links a {
+    display: inline-block !important;
+    font-size: 0.52rem !important;
+    letter-spacing: 0.045em !important;
+    white-space: nowrap !important;
+    flex: 0 0 auto !important;
+  }
+
+  .header-cta {
+    padding: 8px 8px !important;
+    font-size: 0.58rem !important;
+    gap: 3px !important;
+    white-space: nowrap !important;
+  }
+
+
+  /* =========================
+     CONTACT — 1 space right
+     ========================= */
+
+  .contact-copy > h1 {
+    position: relative !important;
+    left: 1.55em !important;
+    max-width: calc(100% - 1.55em) !important;
+  }
+
+  .contact-copy > p,
+  .contact-copy .social-list {
+    position: relative !important;
+    left: 1.55em !important;
+    max-width: calc(100% - 1.55em) !important;
+  }
+
+
+/* ===== RESUME MOBILE — FINAL NAME POSITION ===== */
+@media screen and (max-width: 760px) {
+  .resume-intro > h1 {
+    position: relative !important;
+    left: 24px !important;
+    margin-left: 0 !important;
+    transform: none !important;
+  }
+}
+
+
+/* =========================================================
+   EMERGENCY FINAL FIX — RESUME NAME
+   Mobile only. Overrides all previous resume H1 overrides.
+   ========================================================= */
+@media screen and (max-width: 760px) {
+
+  .resume-page .resume-intro {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+  }
+
+  .resume-page .resume-intro > h1 {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    inset: auto !important;
+    transform: none !important;
+    translate: none !important;
+
+    display: block !important;
+
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 24px !important;
+
+    padding: 0 !important;
+
+    width: auto !important;
+    max-width: calc(100% - 24px) !important;
+
+    overflow: visible !important;
+    white-space: normal !important;
+    box-sizing: border-box !important;
+  }
+}
+}
+
+/* ===== Resume mobile: move the entire intro block 2 lines up ===== */
+@media screen and (max-width: 760px) {
+  .resume-page .resume-intro {
+    transform: translateY(-3.1em) !important;
+  }
+}
+
+
+/* ===== CV / RESUME — mobile one line right ===== */
+@media screen and (max-width: 760px) {
+  .resume-page .resume-intro > .eyebrow {
+    position: relative !important;
+    left: 1.55em !important;
+    transform: none !important;
+    margin-left: 0 !important;
+  }
+}
+
+
+/* ===== CV / RESUME — mobile one line up ===== */
+@media screen and (max-width: 760px) {
+  .resume-page .resume-intro > .eyebrow {
+    position: relative !important;
+    top: -1.55em !important;
+  }
+}
+
+
+/* ===== Download CV — mobile one line right ===== */
+@media screen and (max-width: 760px) {
+  .resume-download-row .resume-actions {
+    position: relative !important;
+    left: 1.55em !important;
+  }
+}
+
+
+/* ===== Resume description — mobile 1.5 lines left ===== */
+@media screen and (max-width: 760px) {
+  .resume-page .resume-side-intro {
+    position: relative !important;
+    left: -2.325em !important;
+  }
+}
+
+
+/* ===== Resume description — mobile exactly 3 lines ===== */
+@media screen and (max-width: 760px) {
+  .resume-page .resume-side-intro {
+    width: 290px !important;
+    max-width: 290px !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    line-height: 1.45 !important;
+  }
+}
+
+
+/* ===== Resume description — mobile exactly one line down ===== */
+@media screen and (max-width: 760px) {
+  .resume-page .resume-side-intro {
+    top: 1.55em !important;
+  }
+}
+
+
+/* ===== Resume description — mobile 2 spaces right ===== */
+@media screen and (max-width: 760px) {
+  .resume-page .resume-side-intro {
+    left: 3.1em !important;
+  }
+}
+
+
+/* ===== Resume description — mobile one space left ===== */
+@media screen and (max-width: 760px) {
+  .resume-page .resume-side-intro {
+    left: 1.55em !important;
+  }
+}
+
+
+/* ===== Resume description — mobile 1.55em left ===== */
+@media screen and (max-width: 760px) {
+  .resume-page .resume-side-intro {
+    left: -1.55em !important;
+  }
+}
+
+
+/* ===== Resume description — mobile centered ===== */
+@media screen and (max-width: 760px) {
+  .resume-page .resume-side-intro {
+    left: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+}
+
+
+/* ===== Resume description — mobile half space left ===== */
+@media screen and (max-width: 760px) {
+  .resume-page .resume-side-intro {
+    position: relative !important;
+    left: -0.775em !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+}
+
+
+/* ===== About Me — mobile 2 lines up ===== */
+@media screen and (max-width: 760px) {
+  .about-me-label {
+    position: relative !important;
+    top: -3.1em !important;
+  }
+}
+
+
+/* ===== About Me — mobile one line down ===== */
+@media screen and (max-width: 760px) {
+  .about-me-label {
+    top: -1.55em !important;
+  }
+}
+
+
+/* ===== About interests heading — mobile one line up ===== */
+@media screen and (max-width: 760px) {
+  .interests-section > .section-heading.compact {
+    transform: translateY(-1.55em) !important;
+  }
+}
+
+
+/* ===== Contact label — mobile one space right ===== */
+@media screen and (max-width: 760px) {
+  .contact-copy > .eyebrow {
+    position: relative !important;
+    left: 1.55em !important;
+  }
+}
+
+
+/* ===== Contact title — mobile 1.5 lines left ===== */
+@media screen and (max-width: 760px) {
+  .contact-copy > h1 {
+    position: relative !important;
+    left: -2.325em !important;
+  }
+}
+
+
+/* ===== Contact title — mobile restore 1.5 lines right ===== */
+@media screen and (max-width: 760px) {
+  .contact-copy > h1 {
+    left: 0 !important;
+  }
+}
+
+
+/* ===== Contact title — mobile half space right ===== */
+@media screen and (max-width: 760px) {
+  .contact-copy > h1 {
+    left: 0.775em !important;
+  }
+}
+
+
+/* ===== Contact title — mobile quarter space left ===== */
+@media screen and (max-width: 760px) {
+  .contact-copy > h1 {
+    left: 0.3875em !important;
+  }
+}
+
+
+/* ===== Gallery: SELECTED EVIDENCE color ===== */
+@media screen and (max-width: 760px) {
+  .gallery-intro .eyebrow {
+    color: #216538 !important;
+  }
+}
+
+
+/* ===== Gallery intro description — mobile 3-line centered layout ===== */
+@media screen and (max-width: 760px) {
+  .gallery-intro > p {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+}
+
+
+/* ===== Mobile ticker hearts — same vertical alignment ===== */
+@media screen and (max-width: 760px) {
+  .ticker i {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
+    line-height: 1 !important;
+    height: 1em !important;
+    position: relative !important;
+    top: 0 !important;
+  }
+}
+
+
+/* ===== Mobile ticker — second row quarter space left ===== */
+@media screen and (max-width: 760px) {
+  .ticker > div > :nth-child(5),
+  .ticker > div > :nth-child(6),
+  .ticker > div > :nth-child(7),
+  .ticker > div > :nth-child(8) {
+    position: relative !important;
+    left: -0.3875em !important;
+  }
+}
+
