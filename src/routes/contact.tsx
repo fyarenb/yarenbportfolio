@@ -42,15 +42,8 @@ function ContactPage() {
           <form
           name="contact"
           method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          action="mailto:yarenbirben11@gmail.com"
+          action="https://formspree.io/f/xppabpvq"
         >
-          <input type="hidden" name="form-name" value="contact" />
-          <p className="hidden-field">
-            <label>Don’t fill this out: <input name="bot-field" /></label>
-          </p>
-
           <div className="field-row">
             <label>
               Your name
