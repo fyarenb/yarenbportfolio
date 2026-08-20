@@ -3578,4 +3578,16 @@ body {
 .gallery-intro .eyebrow {
   color: #468F51 !important;
 }
-
+.success-message {
+  margin-top: 16px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}.form-success p {
+  color: #000000 !important;
+  font-weight: 600;
+}.feedback-input {
+  color: #000000 !important;
+  font-weight: 600;
+}.feedback-card .form-success h2 {
+  color: #2E6F40 !important;
+}

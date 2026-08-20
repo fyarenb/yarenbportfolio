@@ -5,3 +5,5 @@ dist/
 .content-collections/
 .env
 .env.*
+
+.vercel
