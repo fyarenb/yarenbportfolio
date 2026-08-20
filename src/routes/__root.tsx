@@ -23,6 +23,26 @@ export const Route = createRootRoute({
           'Portfolio of Fatma Yaren Birben, a multilingual Search Quality and AI Evaluation Specialist.',
       },
       { title: 'Fatma Yaren Birben — AI Evaluation Portfolio' },
+
+      { property: 'og:title', content: 'Fatma Yaren Birben — AI Evaluation Portfolio' },
+      {
+        property: 'og:description',
+        content:
+          'Portfolio of Fatma Yaren Birben, a multilingual Search Quality and AI Evaluation Specialist.',
+      },
+      { property: 'og:image', content: 'https://yarenbportfolio.vercel.app/assets/yb-heart-logo.png' },
+      { property: 'og:url', content: 'https://yarenbportfolio.vercel.app/' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: 'Fatma Yaren Birben Portfolio' },
+
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'Fatma Yaren Birben — AI Evaluation Portfolio' },
+      {
+        name: 'twitter:description',
+        content:
+          'Portfolio of Fatma Yaren Birben, a multilingual Search Quality and AI Evaluation Specialist.',
+      },
+      { name: 'twitter:image', content: 'https://yarenbportfolio.vercel.app/assets/yb-heart-logo.png' },
     ],
     links: [{ rel: 'icon', href: '/assets/yb-heart-logo.png' }],
   }),
