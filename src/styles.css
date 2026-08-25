@@ -3240,7 +3240,6 @@ body {
     align-items: center !important;
     min-width: 0 !important;
     overflow: visible !important;
-    transform: translateX(4px) !important;
   }
 
   .nav-links a {
@@ -3614,4 +3613,59 @@ body {
 .case-columns > div:last-child {
   border: 2px solid #2E6F40 !important;
  }
+}
+@media screen and (max-width: 375px) {
+  .site-header {
+  grid-template-columns: 42px minmax(0, 1fr) auto !important;
+  gap: 8px !important;
+  padding-inline: 6px !important;
+}
+  .brand {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .nav-links {
+  justify-content: flex-start !important;
+  gap: 6.25px !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: relative !important;
+  left: 0 !important;
+}
+  .nav-links a {
+    font-size: 0.48rem !important;
+    letter-spacing: 0.035em !important;
+  }
+
+  .header-cta {
+  position: static !important;
+    padding: 6px 7px !important;
+    font-size: 0.52rem !important;
+  }
+}
+/* ===== NAV LINKS OVERFLOW FIX (logo üstüne binme sorunu) ===== */
+@media screen and (max-width: 480px) {
+  .nav-links {
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    padding-left: 10px !important;
+  }
+  .nav-links::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+/* ===== NAV LINKS — 375px için sıkıştırma ===== */
+@media screen and (max-width: 400px) {
+  .nav-links {
+    gap: 5px !important;
+    padding-left: 6px !important;
+  }
+  .nav-links a {
+    font-size: 0.44rem !important;
+    letter-spacing: 0.02em !important;
+  }
 }
