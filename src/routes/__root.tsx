@@ -1,6 +1,6 @@
 import { HeadContent, Link, Outlet, Scripts, createRootRoute } from '@tanstack/react-router'
 import { ArrowUpRight, Heart } from 'lucide-react'
-
+import { Analytics } from '@vercel/analytics/react'
 import '../styles.css'
 
 const navigation = [
@@ -98,6 +98,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         {children}
+       <Analytics />
         <Scripts />
       </body>
     </html>
