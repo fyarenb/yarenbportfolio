@@ -3235,11 +3235,12 @@ body {
 
   .nav-links {
     display: flex !important;
-    gap: 5px !important;
+    gap: 6.25px !important;
     justify-content: center !important;
     align-items: center !important;
     min-width: 0 !important;
     overflow: visible !important;
+    transform: translateX(4px) !important;
   }
 
   .nav-links a {
