@@ -2831,6 +2831,16 @@ body {
     box-sizing: border-box !important;
     transform: none !important;
   }
+  
+ .featured-work > .section-heading h2 {
+    position: relative !important;
+    left: -8px !important;
+  }
+
+  .featured-row > svg {
+    position: relative !important;
+    left: -8px !important;
+  }
 
   .featured-row > div,
   .featured-row h3,
