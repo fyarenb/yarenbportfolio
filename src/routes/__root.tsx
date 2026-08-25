@@ -30,8 +30,8 @@ export const Route = createRootRoute({
         content:
           'Portfolio of Fatma Yaren Birben, a multilingual Search Quality and AI Evaluation Specialist.',
       },
-      { property: 'og:image', content: 'https://yarenbportfolio.vercel.app/assets/og-image.png' },
-      { property: 'og:url', content: 'https://yarenbportfolio.vercel.app/' },
+      { property: 'og:image', content: 'https://yarenbirben.com.tr/assets/og-image.png' },
+      { property: 'og:url', content: 'https://yarenbirben.com.tr/' },
       { property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Fatma Yaren Birben Portfolio' },
 
@@ -42,7 +42,7 @@ export const Route = createRootRoute({
         content:
           'Portfolio of Fatma Yaren Birben, a multilingual Search Quality and AI Evaluation Specialist.',
       },
-      { name: 'twitter:image', content: 'https://yarenbportfolio.vercel.app/assets/og-image.png' },
+      { name: 'twitter:image', content: 'https://yarenbirben.com.tr/assets/og-image.png' },
     ],
     links: [{ rel: 'icon', href: '/assets/yb-heart-logo.png' }],
   }),
