@@ -45,7 +45,7 @@ export const Route = createRootRoute({
       },
       { name: 'twitter:image', content: 'https://yarenbirben.com.tr/assets/og-image.png' },
     ],
-    links: [{ rel: 'icon', href: '/assets/yb-heart-logo.png' }],
+   links: [{ rel: 'icon', href: '/assets/yb-heart-logo.png?v=2' }],
   }),
   shellComponent: RootDocument,
   component: SiteLayout,
