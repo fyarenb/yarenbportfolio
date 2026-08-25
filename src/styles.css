@@ -2604,14 +2604,13 @@ body {
 
   .case-columns > div {
   min-width: 0 !important;
-  border: 0 !important;
-  border-right: 0 !important;
-  border-bottom: 1px solid var(--line) !important;
-  }
+  border: 2px solid #2E6F40 !important;
+  box-sizing: border-box !important;
+}
 
-  .case-columns > div:last-child {
-  border-bottom: 0 !important;
-  }
+.case-columns > div:last-child {
+  border: 2px solid #2E6F40 !important;
+}
   /* ---------- Projects CTA ---------- */
   .project-cta {
     width: 100% !important;
@@ -3588,4 +3587,20 @@ body {
   font-weight: 600;
 }.feedback-card .form-success h2 {
   color: #2E6F40 !important;
+}
+/* ===== Mobile project tables: consistent 2px frame ===== */
+@media (max-width: 768px) {
+  .case-columns {
+    border: 2px solid var(--green) !important;
+    box-sizing: border-box !important;
+  }
+
+.case-columns > div {
+  border: 2px solid #2E6F40 !important;
+  box-sizing: border-box !important;
+}
+
+.case-columns > div:last-child {
+  border: 2px solid #2E6F40 !important;
+ }
 }
