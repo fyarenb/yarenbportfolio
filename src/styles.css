@@ -2605,11 +2605,11 @@ body {
   .case-columns > div {
     min-width: 0 !important;
     border-right: 0 !important;
-    border-bottom: 1px solid var(--line) !important;
+    border-bottom: 2px solid var(--green) !important;
   }
 
   .case-columns > div:last-child {
-    border-bottom: 0 !important;
+    border-bottom: 2px solid var(--green) !important;
   }
 
   /* ---------- Projects CTA ---------- */
