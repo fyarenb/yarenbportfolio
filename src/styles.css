@@ -2603,15 +2603,15 @@ body {
   }
 
   .case-columns > div {
-    min-width: 0 !important;
-    border-right: 0 !important;
-    border-bottom: 2px solid var(--green) !important;
+  min-width: 0 !important;
+  border: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 1px solid var(--line) !important;
   }
 
   .case-columns > div:last-child {
-    border-bottom: 2px solid var(--green) !important;
+  border-bottom: 0 !important;
   }
-
   /* ---------- Projects CTA ---------- */
   .project-cta {
     width: 100% !important;
@@ -2783,7 +2783,7 @@ body {
     min-width: 0 !important;
     box-sizing: border-box !important;
     border-right: 0 !important;
-    border-bottom: 2px solid var(--green) !important;
+    border-bottom: 2px solid var(--line) !important;
   }
 
   .criterion:last-child {
