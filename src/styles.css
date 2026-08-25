@@ -259,7 +259,7 @@ h2 { color: var(--orange-dark); font-size: clamp(2.75rem, 5.5vw, 5.3rem); }
   .portfolio-mark { padding: 42px; }
   .section { padding-block: 85px; }
   .section-heading { grid-template-columns: 1fr; gap: 22px; margin-bottom: 45px; }
-  .criteria-grid { grid-template-columns: 1fr; }
+  .criteria-grid { grid-template-columns: 1fr; border: 2px solid var(--line); }
   .criterion { min-height: 245px; border-right: 0; border-bottom: 1px solid var(--line); }
   .criterion:last-child { border-bottom: 0; }
   .featured-row { grid-template-columns: 38px 1fr auto; gap: 12px; padding-inline: 5px; }
