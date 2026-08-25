@@ -1,0 +1,24 @@
+[1mdiff --git a/src/routes/__root.tsx b/src/routes/__root.tsx[m
+[1mindex c2190ce..9800204 100644[m
+[1m--- a/src/routes/__root.tsx[m
+[1m+++ b/src/routes/__root.tsx[m
+[36m@@ -30,8 +30,8 @@[m [mexport const Route = createRootRoute({[m
+         content:[m
+           'Portfolio of Fatma Yaren Birben, a multilingual Search Quality and AI Evaluation Specialist.',[m
+       },[m
+[31m-      { property: 'og:image', content: 'https://yarenbportfolio.vercel.app/assets/og-image.png' },[m
+[31m-      { property: 'og:url', content: 'https://yarenbportfolio.vercel.app/' },[m
+[32m+[m[32m      { property: 'og:image', content: 'https://yarenbirben.com.tr/assets/og-image.png' },[m
+[32m+[m[32m      { property: 'og:url', content: 'https://yarenbirben.com.tr/' },[m
+       { property: 'og:type', content: 'website' },[m
+       { property: 'og:site_name', content: 'Fatma Yaren Birben Portfolio' },[m
+ [m
+[36m@@ -42,7 +42,7 @@[m [mexport const Route = createRootRoute({[m
+         content:[m
+           'Portfolio of Fatma Yaren Birben, a multilingual Search Quality and AI Evaluation Specialist.',[m
+       },[m
+[31m-      { name: 'twitter:image', content: 'https://yarenbportfolio.vercel.app/assets/og-image.png' },[m
+[32m+[m[32m      { name: 'twitter:image', content: 'https://yarenbirben.com.tr/assets/og-image.png' },[m
+     ],[m
+     links: [{ rel: 'icon', href: '/assets/yb-heart-logo.png' }],[m
+   }),[m
