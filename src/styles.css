@@ -3659,7 +3659,7 @@ body {
   }
 }
 /* ===== NAV LINKS — 375px için sıkıştırma ===== */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   .nav-links {
     gap: 5px !important;
     padding-left: 6px !important;
@@ -3667,5 +3667,91 @@ body {
   .nav-links a {
     font-size: 0.44rem !important;
     letter-spacing: 0.02em !important;
+  }
+}
+/* ===== TABLET (761px-920px) — Say hello butonunu geri getir ===== */
+@media (min-width: 761px) and (max-width: 920px) {
+  .site-header {
+    grid-template-columns: auto 1fr auto !important;
+  }
+  .header-cta {
+    display: inline-flex !important;
+    padding: 10px 14px !important;
+    font-size: 0.75rem !important;
+    white-space: nowrap !important;
+  }
+  .nav-links {
+    justify-content: center !important;
+    gap: 12px !important;
+  }
+  .nav-links a {
+    font-size: 0.72rem !important;
+  }
+}
+/* ===== ÇOK DAR EKRANLAR (320px-340px) — nav menüsünü sıkıştır ===== */
+@media screen and (max-width: 340px) {
+  .site-header {
+    grid-template-columns: 34px minmax(0, 1fr) auto !important;
+    gap: 2px !important;
+    padding-inline: 4px !important;
+  }
+
+  .brand {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .nav-links {
+    gap: 2px !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .nav-links a {
+    font-size: 0.38rem !important;
+    letter-spacing: 0 !important;
+  }
+
+  .header-cta {
+    padding: 4px 4px !important;
+    font-size: 0.44rem !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  .nav-links {
+    margin-right: 20px !important;
+    gap: 5px !important;
+  }
+
+  .nav-links a {
+    font-size: 0.48rem !important;
+    letter-spacing: 0.035em !important;
+  }
+}
+@media screen and (max-width: 340px) {
+  .nav-links {
+    gap: 3px !important;
+    margin-right: 0 !important;
+  }
+
+  .nav-links a {
+    font-size: 0.43rem !important;
+    letter-spacing: 0.02em !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  .nav-links {
+    gap: 2.5px !important;
+    margin-right: 0 !important;
+  }
+
+  .nav-links a {
+    font-size: 0.44rem !important;
+    letter-spacing: 0.015em !important;
+  }
+
+  .header-cta {
+    padding: 5px 5px !important;
+    font-size: 0.48rem !important;
   }
 }
