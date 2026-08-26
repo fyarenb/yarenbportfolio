@@ -3771,3 +3771,14 @@ body {
     box-sizing: border-box !important;
   }
 }
+@media screen and (max-width: 760px) {
+  .projects-intro h1 em {
+    position: relative !important;
+    top: 8px !important;
+  }
+}
+@media screen and (max-width: 760px) {
+  .gallery-intro h1 {
+    line-height: 1.08 !important;
+  }
+}
