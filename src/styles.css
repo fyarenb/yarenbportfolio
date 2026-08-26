@@ -3755,3 +3755,19 @@ body {
     font-size: 0.48rem !important;
   }
 }
+@media screen and (max-width: 760px) {
+  .hero .portrait-frame {
+    box-sizing: border-box !important;
+    padding: 12px !important;
+  }
+
+  .hero .portrait-frame .portrait-inner {
+    height: 100% !important;
+  }
+
+  .hero .portrait-frame .portrait-inner .portrait {
+    min-height: 0 !important;
+    height: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
