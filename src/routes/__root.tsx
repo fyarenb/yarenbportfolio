@@ -93,8 +93,9 @@ function SiteLayout() {
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" translate="no">
       <head>
+        <meta name="google" content="notranslate" />
         <HeadContent />
       </head>
       <body>
