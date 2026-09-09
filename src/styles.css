@@ -3826,3 +3826,16 @@ body {
     width: 100% !important;
   }
 }
+
+/* ===== View all case studies ===== */
+.featured-work .section-end-link .button-outline {
+  color: #FFFFFF !important;
+}
+
+.featured-work .section-end-link .button-outline:hover,
+.featured-work .section-end-link .button-outline:focus,
+.featured-work .section-end-link .button-outline:active {
+  background-color: #F25413 !important;
+  border-color: #F25413 !important;
+  color: #FFFFFF !important;
+}
