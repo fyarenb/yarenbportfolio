@@ -3839,3 +3839,117 @@ body {
   border-color: #F25413 !important;
   color: #FFFFFF !important;
 }
+
+/* ===== AI Lab: 11-card gallery ===== */
+.ai-lab-gallery-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px 20px;
+  padding-bottom: 100px;
+}
+
+.ai-lab-gallery-grid .ai-lab-card,
+.ai-lab-gallery-grid .ai-lab-card:nth-child(even) {
+  margin-top: 0 !important;
+}
+
+.ai-lab-card .gallery-image-wrap {
+  min-height: 0;
+  aspect-ratio: 4 / 3;
+}
+
+.ai-lab-card .ai-lab-preview {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.ai-lab-card .ai-lab-preview-wrap {
+  display: block;
+}
+
+.ai-lab-open {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 11px;
+  background: var(--green);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 2;
+}
+
+.ai-lab-card:hover .ai-lab-open {
+  background: var(--cream);
+  color: var(--green);
+}
+
+.ai-lab-card .ai-lab-caption {
+  padding: 14px 14px 16px !important;
+  text-align: left !important;
+}
+
+.ai-lab-card .ai-lab-caption h2 {
+  margin: 0 0 5px !important;
+  text-align: left !important;
+  font-size: 1rem !important;
+  line-height: 1.15 !important;
+}
+
+.ai-lab-card .ai-lab-caption p {
+  margin: 0 !important;
+  text-align: left !important;
+  font-size: 0.72rem !important;
+  line-height: 1.25 !important;
+}
+
+.sheila-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 14px;
+  margin-top: 10px;
+}
+
+.sheila-website-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--green);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.sheila-website-link:hover,
+.sheila-website-link:focus-visible {
+  color: var(--orange-dark);
+  text-decoration: underline;
+}
+
+@media (max-width: 1080px) {
+  .ai-lab-gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .ai-lab-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  .ai-lab-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
