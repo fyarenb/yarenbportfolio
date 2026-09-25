@@ -3953,3 +3953,18 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* AI Lab final adjustments */
+.ai-lab-intro {
+  padding-bottom: 10px !important;
+  margin-bottom: 0 !important;
+}
+
+.ai-lab-intro + .ai-lab-gallery-grid {
+  margin-top: 0 !important;
+}
+
+.sheila-website-link {
+  font-size: 0.82rem !important;
+  gap: 5px;
+}

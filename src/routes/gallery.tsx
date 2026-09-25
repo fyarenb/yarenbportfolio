@@ -65,7 +65,6 @@ function GalleryPage() {
     <div className="page-wrap">
       <section className="page-intro page-grid gallery-intro ai-lab-intro">
         <span className="eyebrow">AI Lab</span>
-        <h1>AI Lab</h1>
       </section>
 
       <section className="gallery-grid page-grid ai-lab-gallery-grid" aria-label="AI Lab projects">
@@ -79,7 +78,7 @@ function GalleryPage() {
           >
             <div className="gallery-image-wrap ai-lab-preview-wrap">
               <img
-                src="/assets/ai-lab/sheila-ai-preview.svg"
+                src="/assets/ai-lab/previews/sheila-ai-preview.png"
                 alt="Sheila AI preview"
                 className="ai-lab-preview"
               />
@@ -100,7 +99,7 @@ function GalleryPage() {
                   rel="noreferrer"
                   className="sheila-website-link"
                 >
-                  Website <ArrowUpRight size={14} />
+                  Website <ArrowUpRight size={16} />
                 </a>
                 <a
                   href={SHEILA_AI_ONEDRIVE_VIDEO_URL}
@@ -108,7 +107,7 @@ function GalleryPage() {
                   rel="noreferrer"
                   className="sheila-website-link"
                 >
-                  Demo Video <ArrowUpRight size={14} />
+                  Demo Video <ArrowUpRight size={16} />
                 </a>
               </div>
             </div>
