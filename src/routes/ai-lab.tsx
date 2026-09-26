@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { ArrowUpRight } from 'lucide-react'
 
-export const Route = createFileRoute('/gallery')({ component: GalleryPage })
+export const Route = createFileRoute('/ai-lab')({ component: GalleryPage })
 
 const SHEILA_AI_WEBSITE_URL = 'https://sheila-ai-one.vercel.app/'
 const SHEILA_AI_ONEDRIVE_VIDEO_URL =
