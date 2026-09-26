@@ -3991,3 +3991,75 @@ body {
 .ai-lab-gallery-grid .ai-lab-card .ai-lab-caption {
   flex: 1 1 auto !important;
 }
+/* ===== AI Lab + mobile header final ===== */
+
+@media screen and (min-width: 521px) and (max-width: 760px) {
+  .ai-lab-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    justify-content: center !important;
+    gap: 28px 20px !important;
+  }
+
+  .ai-lab-gallery-grid .ai-lab-card {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  .ai-lab-gallery-grid .ai-lab-card .gallery-image-wrap,
+  .ai-lab-gallery-grid .ai-lab-card .ai-lab-preview-wrap {
+    width: 100% !important;
+    height: 156px !important;
+    min-height: 156px !important;
+    max-height: 156px !important;
+  }
+}
+
+
+@media screen and (max-width: 520px) {
+  .ai-lab-gallery-grid {
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 28px !important;
+  }
+
+  .ai-lab-gallery-grid .ai-lab-card {
+    width: 306px !important;
+    max-width: calc(100vw - 32px) !important;
+    margin: 0 auto !important;
+  }
+
+  .ai-lab-gallery-grid .ai-lab-card .gallery-image-wrap,
+  .ai-lab-gallery-grid .ai-lab-card .ai-lab-preview-wrap {
+    width: 100% !important;
+    height: 156px !important;
+    min-height: 156px !important;
+    max-height: 156px !important;
+  }
+}
+
+/* Say Hello stays visible on tablet/mobile */
+@media screen and (max-width: 760px) {
+  .site-header {
+    grid-template-columns: 46px minmax(0, 1fr) auto !important;
+    gap: 6px !important;
+    overflow: visible !important;
+  }
+
+  .header-cta {
+    display: inline-flex !important;
+    visibility: visible !important;
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* Sheila AI preview fills the entire frame - mobile/tablet only */
+@media screen and (max-width: 760px) {
+  .ai-lab-gallery-grid .ai-lab-card:first-child .ai-lab-preview {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+}
