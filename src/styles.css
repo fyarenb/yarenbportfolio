@@ -3854,15 +3854,16 @@ body {
 
 .ai-lab-card .gallery-image-wrap {
   min-height: 0;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: auto;
+  height: auto;
 }
 
 .ai-lab-card .ai-lab-preview {
   width: 100%;
-  height: 100%;
+  height: auto;
   min-height: 0;
-  object-fit: cover;
-  object-position: top center;
+  object-fit: contain;
+  object-position: center;
   display: block;
 }
 
