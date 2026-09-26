@@ -4063,3 +4063,88 @@ body {
     object-position: center center !important;
   }
 }
+/* =========================================================
+   MOBILE ONLY — HEADER FINAL FIX
+   Desktop remains unchanged.
+   ========================================================= */
+@media screen and (max-width: 760px) {
+
+  /* MOBILE HEADER — center navigation between logo and Say hello */
+  .site-header {
+    grid-template-columns: 46px minmax(0, 1fr) auto !important;
+    gap: 8px !important;
+    padding-inline: 8px !important;
+    overflow: visible !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 6.25px !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .nav-links a {
+    flex: 0 0 auto !important;
+    font-size: 0.52rem !important;
+    letter-spacing: 0.045em !important;
+    white-space: nowrap !important;
+  }
+
+  .header-cta {
+    position: static !important;
+    margin: 0 !important;
+    padding: 8px 8px !important;
+    font-size: 0.58rem !important;
+    gap: 3px !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* Very small phones */
+@media screen and (max-width: 430px) {
+
+  .site-header {
+    grid-template-columns: 42px minmax(0, 1fr) auto !important;
+    gap: 6px !important;
+    padding-inline: 6px !important;
+  }
+
+  .brand {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .nav-links {
+    justify-content: center !important;
+    gap: 5px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  .nav-links a {
+    font-size: 0.48rem !important;
+    letter-spacing: 0.035em !important;
+  }
+
+  .header-cta {
+    position: static !important;
+    padding: 6px 7px !important;
+    font-size: 0.52rem !important;
+  }
+}
+
+/* ===== AI LAB — 2. CARD DESKTOP BACKGROUND ===== */
+@media screen and (min-width: 761px) {
+  .ai-lab-gallery-grid .ai-lab-card:nth-child(2) .gallery-image-wrap {
+    background-color: #F7D7D3 !important;
+  }
+}
