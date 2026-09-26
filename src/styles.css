@@ -3969,9 +3969,17 @@ body {
   gap: 5px;
 }
 @media screen and (max-width: 760px) {
+  .ai-lab-card .gallery-image-wrap {
+    aspect-ratio: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
   .ai-lab-card .gallery-image-wrap img.ai-lab-preview {
-    object-fit: cover !important;
-    object-position: top center !important;
-    height: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
   }
 }
