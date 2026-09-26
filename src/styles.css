@@ -3968,23 +3968,3 @@ body {
   font-size: 0.82rem !important;
   gap: 5px;
 }
-/* AI Lab - mobile cards fit exactly */
-@media (max-width: 768px) {
-  .ai-lab-gallery-grid,
-  .ai-lab-gallery-grid > * {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    box-sizing: border-box !important;
-  }
-
-  .ai-lab-gallery-grid img {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    height: auto !important;
-    display: block !important;
-    object-fit: contain !important;
-    box-sizing: border-box !important;
-  }
-}
