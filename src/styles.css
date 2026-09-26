@@ -3854,13 +3854,13 @@ body {
 
 .ai-lab-card .gallery-image-wrap {
   min-height: 0;
-  aspect-ratio: auto;
+  aspect-ratio: 3 / 4;
   height: auto;
 }
 
 .ai-lab-card .ai-lab-preview {
   width: 100%;
-  height: auto;
+  height: 100%;
   min-height: 0;
   object-fit: contain;
   object-position: center;
@@ -3968,19 +3968,4 @@ body {
 .sheila-website-link {
   font-size: 0.82rem !important;
   gap: 5px;
-}
-@media screen and (max-width: 760px) {
-  .ai-lab-card .gallery-image-wrap {
-    aspect-ratio: auto !important;
-    height: auto !important;
-    min-height: 0 !important;
-  }
-
-  .ai-lab-card .gallery-image-wrap img.ai-lab-preview {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
-    object-position: center !important;
-    display: block !important;
-  }
 }
