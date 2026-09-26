@@ -3968,3 +3968,27 @@ body {
   font-size: 0.82rem !important;
   gap: 5px;
 }
+/* AI Lab - final mobile frame fit */
+@media (max-width: 768px) {
+  .ai-lab-gallery-grid {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .ai-lab-gallery-grid > * {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .ai-lab-gallery-grid img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto !important;
+    max-height: 100%;
+    object-fit: contain !important;
+    box-sizing: border-box;
+  }
+}
