@@ -42,7 +42,7 @@ export const caseStudies = [
     result: 'Produced a data-led strategy connecting localized campaigns, creator partnerships, content, and targeted mobile media.',
     resultShort: 'A clearer path from traffic to trust.',
     tags: ['SEO', 'Digital marketing', 'E-commerce', 'Performance analysis'],
-    sampleUrl: 'https://docs.google.com/document/d/17kTY55HVFM4iue16VUV07veDXLh0DqJW/edit?usp=sharing&ouid=103117090966400388934&rtpof=true&sd=true',
+    sampleUrl: 'https://drive.google.com/file/d/1_82wnV3ZmM6kZtG6Eb98eDnoX5nRZJWD/view',
   },
   {
     slug: 'italian-brands',
