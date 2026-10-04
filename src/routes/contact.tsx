@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { ArrowUpRight, CalendarDays, CircleCheck, FileText, Github, Linkedin, Mail } from 'lucide-react'
+import { ArrowUpRight, CalendarDays, CircleCheck, FileText, Github, Linkedin } from 'lucide-react'
 import { useState } from "react"
 
 export const Route = createFileRoute('/contact')({ component: ContactPage })
@@ -71,11 +71,6 @@ function ContactPage() {
         <span className="eyebrow">Contact</span>
         <h1>Let’s make the answer<br /><em>better together.</em></h1>
         <div className="social-list">
-          <a href="mailto:yarenbirben11@gmail.com">
-            <Mail />
-            <span><small>Email</small>yarenbirben11@gmail.com</span>
-            <ArrowUpRight />
-          </a>
           <a href="https://www.linkedin.com/in/fatmayarenbirben" target="_blank" rel="noreferrer">
             <Linkedin />
             <span><small>LinkedIn</small>fatmayarenbirben</span>
