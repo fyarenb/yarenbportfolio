@@ -86,11 +86,11 @@ function ContactPage() {
             <span><small>GitHub</small>fyarenb</span>
             <ArrowUpRight />
           </a>
-          <a href="https://wa.me/905365027574" target="_blank" rel="noreferrer">
-            <CalendarDays />
-            <span><small className="booking-label">BOOKING</small>Message me on WhatsApp</span>
-            <ArrowUpRight />
-          </a>
+          <a href="https://calendar.app.google/vhcY7T5myEAJpQ9U8" target="_blank" rel="noreferrer">
+      <CalendarDays />
+       <span><small className="booking-label">BOOKING</small>Schedule a Meeting</span>
+       <ArrowUpRight />
+        </a>
         </div>
       </section>
       <section className="contact-form-side">
