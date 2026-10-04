@@ -4153,3 +4153,14 @@ body {
 .contact-copy .social-list {
   transform: translateY(calc(3.1em + 68px)) !important;
 }
+
+/* ===== Resume description slightly left ===== */
+.resume-side-intro {
+  position: relative !important;
+  left: -2.7em !important;
+  top: 0.775em !important;
+}
+.resume-intro h1 em {
+  position: relative;
+  left: -0.15em !important;
+}
