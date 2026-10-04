@@ -4148,3 +4148,8 @@ body {
     background-color: #F7D7D3 !important;
   }
 }
+
+/* ===== Align social links with fixed Feedback card ===== */
+.contact-copy .social-list {
+  transform: translateY(calc(3.1em + 68px)) !important;
+}
