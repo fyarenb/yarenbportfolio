@@ -15,7 +15,7 @@ const SELECTED_PROJECTS = [
   },
   {
     href: '/assets/ai-lab/battlbox-brand-voice-weekly-content-system.pdf',
-    preview: '/assets/ai-lab/previews/battlbox-brand-voice-weekly-content-system.svg',
+    preview: '/assets/ai-lab/previews/battlbox-brand-voice-weekly-content-system.png',
     title: 'BattlBox Brand Voice & Weekly Content System',
   },
   {
@@ -40,7 +40,7 @@ const SELECTED_PROJECTS = [
   },
   {
     href: '/assets/ai-lab/flyrank-landing-page.pdf',
-    preview: '/assets/ai-lab/previews/flyrank-landing-page.svg',
+    preview: '/assets/ai-lab/previews/flyrank-landing-page.png',
     title: 'Landing Page for FlyRank',
   },
   {
