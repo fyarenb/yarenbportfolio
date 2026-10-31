@@ -4174,3 +4174,14 @@ body {
 .ai-lab-gallery-grid .ai-lab-card.ai-lab-card-fit .ai-lab-caption h2 {
   min-height: 2.3em !important;
 }
+
+/* Lab: bigger Website / Demo Video links on the SheiLa AI card */
+.ai-lab-card .sheila-website-link {
+  font-size: 1rem !important;
+  gap: 6px !important;
+}
+
+.ai-lab-card .sheila-website-link svg {
+  width: 1.2em;
+  height: 1.2em;
+}
