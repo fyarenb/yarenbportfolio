@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AiLabRouteImport } from './routes/ai-lab'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as LabRouteImport } from './routes/lab'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as ResumeRouteImport } from './routes/resume'
 import { Route as BlogSlugRouteImport } from './routes/blog/$slug'
@@ -37,6 +38,11 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LabRoute = LabRouteImport.update({
+  id: '/lab',
+  path: '/lab',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProjectsRoute = ProjectsRouteImport.update({
   id: '/projects',
   path: '/projects',
@@ -58,6 +64,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/ai-lab': typeof AiLabRoute
   '/contact': typeof ContactRoute
+  '/lab': typeof LabRoute
   '/projects': typeof ProjectsRoute
   '/resume': typeof ResumeRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -67,6 +74,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/ai-lab': typeof AiLabRoute
   '/contact': typeof ContactRoute
+  '/lab': typeof LabRoute
   '/projects': typeof ProjectsRoute
   '/resume': typeof ResumeRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -77,6 +85,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/ai-lab': typeof AiLabRoute
   '/contact': typeof ContactRoute
+  '/lab': typeof LabRoute
   '/projects': typeof ProjectsRoute
   '/resume': typeof ResumeRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -88,6 +97,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/ai-lab'
     | '/contact'
+    | '/lab'
     | '/projects'
     | '/resume'
     | '/blog/$slug'
@@ -97,6 +107,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/ai-lab'
     | '/contact'
+    | '/lab'
     | '/projects'
     | '/resume'
     | '/blog/$slug'
@@ -106,6 +117,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/ai-lab'
     | '/contact'
+    | '/lab'
     | '/projects'
     | '/resume'
     | '/blog/$slug'
@@ -116,6 +128,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AiLabRoute: typeof AiLabRoute
   ContactRoute: typeof ContactRoute
+  LabRoute: typeof LabRoute
   ProjectsRoute: typeof ProjectsRoute
   ResumeRoute: typeof ResumeRoute
   BlogSlugRoute: typeof BlogSlugRoute
@@ -151,6 +164,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/lab': {
+      id: '/lab'
+      path: '/lab'
+      fullPath: '/lab'
+      preLoaderRoute: typeof LabRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/projects': {
       id: '/projects'
       path: '/projects'
@@ -180,6 +200,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   AiLabRoute: AiLabRoute,
   ContactRoute: ContactRoute,
+  LabRoute: LabRoute,
   ProjectsRoute: ProjectsRoute,
   ResumeRoute: ResumeRoute,
   BlogSlugRoute: BlogSlugRoute,

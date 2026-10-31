@@ -6,7 +6,7 @@ import '../styles.css'
 const navigation = [
   { to: '/', label: 'Home' },
   { to: '/projects', label: 'Projects' },
-  { to: '/ai-lab', label: 'Lab' },
+  { to: '/lab', label: 'Lab' },
   { to: '/about', label: 'About' },
   { to: '/resume', label: 'CV' },
   { to: '/contact', label: 'Contact' },

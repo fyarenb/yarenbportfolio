@@ -4164,3 +4164,8 @@ body {
   position: relative;
   left: -0.15em !important;
 }
+/* Lab: these two cards end right below their text instead of stretching to the row height */
+.ai-lab-gallery-grid .ai-lab-card.ai-lab-card-fit {
+  height: auto !important;
+  align-self: start !important;
+}
