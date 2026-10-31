@@ -4169,3 +4169,8 @@ body {
   height: auto !important;
   align-self: start !important;
 }
+
+/* Lab: Lead Magnet card keeps the same two-line title height as the Moon and Skin card */
+.ai-lab-gallery-grid .ai-lab-card.ai-lab-card-fit .ai-lab-caption h2 {
+  min-height: 2.3em !important;
+}
