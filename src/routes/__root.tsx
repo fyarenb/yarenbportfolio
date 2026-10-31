@@ -6,7 +6,7 @@ import '../styles.css'
 const navigation = [
   { to: '/', label: 'Home' },
   { to: '/projects', label: 'Projects' },
-  { to: '/ai-lab', label: 'AI Lab' },
+  { to: '/ai-lab', label: 'Lab' },
   { to: '/about', label: 'About' },
   { to: '/resume', label: 'CV' },
   { to: '/contact', label: 'Contact' },
@@ -45,7 +45,7 @@ export const Route = createRootRoute({
       },
       { name: 'twitter:image', content: 'https://yarenbirben.com.tr/assets/og-image.jpg?v=3' },
     ],
-   links: [{ rel: 'icon', href: '/assets/yb-heart-logo.png?v=2' }],
+    links: [{ rel: 'icon', href: '/assets/yb-heart-logo.png?v=2' }],
   }),
   shellComponent: RootDocument,
   component: SiteLayout,
@@ -80,7 +80,6 @@ function SiteLayout() {
         <div>
           <span className="eyebrow">Based in Türkiye · Working globally</span>
           <p>Thoughtful human judgment for better machine intelligence.</p>
-
         </div>
 
         <div className="footer-mark">
@@ -100,7 +99,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         {children}
-       <Analytics />
+        <Analytics />
         <Scripts />
       </body>
     </html>

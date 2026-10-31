@@ -7,21 +7,21 @@ const SHEILA_AI_WEBSITE_URL = 'https://sheila-ai-one.vercel.app/'
 const SHEILA_AI_ONEDRIVE_VIDEO_URL =
   'https://onedrive.live.com/?qt=allmyphotos&photosData=%2Fshare%2F00B4C7A2A10687D3%21s7ea619ce2e804508a534694e0b9a5a1d%3Fithint%3Dvideo%26e%3DPlGWVn%26migratedtospo%3Dtrue&cid=00B4C7A2A10687D3&id=00B4C7A2A10687D3%21s7ea619ce2e804508a534694e0b9a5a1d&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3YvYy8wMGI0YzdhMmExMDY4N2QzL0lRRE9HYVotZ0M0SVJhVTBhVTRMbWxvZEFiNXFqUk95bW5aY2ZjSlRfcUFZYjhVP2U9UGxHV1Zu&v=photos'
 
-const AI_MARKETING_PROJECTS = [
+const SELECTED_PROJECTS = [
   {
     href: '/assets/ai-lab/battlbox-weekly-content.pdf',
     preview: '/assets/ai-lab/previews/battlbox-weekly-content.png',
     title: 'BattlBox - Weekly Content Package',
   },
   {
-    href: '/assets/ai-lab/battlbox-claude-project-assignment.pdf',
+    href: '/assets/ai-lab/battlbox-brand-voice-weekly-content-system.pdf',
     preview: '/assets/ai-lab/previews/battlbox-claude-project-assignment.png',
-    title: 'BattlBox - Claude Project Assignment',
+    title: 'BattlBox Brand Voice & Weekly Content System',
   },
   {
     href: '/assets/ai-lab/battlbox-copywriting-assignment.pdf',
     preview: '/assets/ai-lab/previews/battlbox-copywriting-assignment.png',
-    title: 'BattlBox - Copywriting Assignment',
+    title: 'BattlBox Copywriting',
   },
   {
     href: '/assets/ai-lab/youtube-playbook-battlbox-flyrank.pdf',
@@ -31,17 +31,17 @@ const AI_MARKETING_PROJECTS = [
   {
     href: '/assets/ai-lab/flyrank-state-of-seo-2026.pdf',
     preview: '/assets/ai-lab/previews/flyrank-state-of-seo-2026.png',
-    title: 'FlyRank - State of SEO 2026 Content Pack',
+    title: 'FlyRank Content Package',
   },
   {
     href: '/assets/ai-lab/flyrank-new-channel-shortlist.pdf',
     preview: '/assets/ai-lab/previews/flyrank-new-channel-shortlist.png',
-    title: 'FlyRank - New Channel Shortlist',
+    title: 'FlyRank New Channel Expansion Shortlist',
   },
   {
     href: '/assets/ai-lab/flyrank-landing-page.pdf',
     preview: '/assets/ai-lab/previews/flyrank-landing-page.png',
-    title: 'FlyRank - Landing Page',
+    title: 'Landing Page for FlyRank',
   },
   {
     href: '/assets/ai-lab/moon-and-skin-beauty-playbook.pdf',
@@ -51,12 +51,12 @@ const AI_MARKETING_PROJECTS = [
   {
     href: '/assets/ai-lab/building-a-brand-ai-can-find.pdf',
     preview: '/assets/ai-lab/previews/building-a-brand-ai-can-find.png',
-    title: 'Building a Brand AI Can Find',
+    title: 'The Lead Magnet for FlyRank AI',
   },
   {
     href: '/assets/ai-lab/ad-before-after-analysis.pdf',
     preview: '/assets/ai-lab/previews/ad-before-after-analysis.png',
-    title: 'Ad Before/After Analysis',
+    title: 'Ad Analysis: Before / After Comparison - Bub Naturals x Vital Proteins x Sports Research',
   },
 ] as const
 
@@ -64,22 +64,22 @@ function GalleryPage() {
   return (
     <div className="page-wrap">
       <section className="page-intro page-grid gallery-intro ai-lab-intro">
-        <span className="eyebrow">AI Lab</span>
+        <span className="eyebrow">Lab</span>
       </section>
 
-      <section className="gallery-grid page-grid ai-lab-gallery-grid" aria-label="AI Lab projects">
+      <section className="gallery-grid page-grid ai-lab-gallery-grid" aria-label="Lab projects">
         <article className="gallery-card ai-lab-card sheila-ai-card">
           <a
             href={SHEILA_AI_ONEDRIVE_VIDEO_URL}
             target="_blank"
             rel="noreferrer"
             className="gallery-image-link"
-            aria-label="Open Sheila AI demo video"
+            aria-label="Open SheiLa AI demo video"
           >
             <div className="gallery-image-wrap ai-lab-preview-wrap">
               <img
                 src="/assets/ai-lab/previews/sheila-ai-preview.png"
-                alt="Sheila AI preview"
+                alt="SheiLa AI preview"
                 className="ai-lab-preview"
               />
               <span className="ai-lab-open">
@@ -90,7 +90,7 @@ function GalleryPage() {
 
           <div className="gallery-caption ai-lab-caption">
             <div>
-              <h2>Sheila AI</h2>
+              <h2>SheiLa AI</h2>
               <p>Personal AI agent</p>
               <div className="sheila-links">
                 <a
@@ -114,7 +114,7 @@ function GalleryPage() {
           </div>
         </article>
 
-        {AI_MARKETING_PROJECTS.map((item) => (
+        {SELECTED_PROJECTS.map((item) => (
           <article className="gallery-card ai-lab-card" key={item.href}>
             <a
               href={item.href}
@@ -138,7 +138,7 @@ function GalleryPage() {
             <div className="gallery-caption ai-lab-caption">
               <div>
                 <h2>{item.title}</h2>
-                <p>AI Marketing Project · PDF</p>
+                <p>Project document · PDF</p>
               </div>
             </div>
           </article>
